@@ -1,0 +1,258 @@
+/*----------------------------------------------------
+
+      Button - atoms 
+
+--------------------------------------------------- */
+.button {
+    cursor: pointer;
+}
+/*-------------------------------------------
+      -----    Different positions     -----   
+------------------------------------------- */
+.button.center {
+    text-align: center;
+    display: block;
+}
+.button.right {
+    text-align: right;
+    display: block;
+}
+.button + .button {
+    margin: $base 0;
+}
+/*-------------------------------------------
+      -----    Different buttons      -----   
+------------------------------------------- */
+.button .button-inner {
+    border-radius: $base * 4;
+    transition: background-color 200ms ease-in-out;
+    display: inline-block;
+    padding: 1.5em 2em;
+    a {
+        font-family: "Raleway", Arial, sans-serif;
+        font-size: 0.9em;
+        font-weight: 700;
+        text-decoration: none;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        &:after {
+            content: inherit;
+        }
+    }
+}
+.primary-button .button-inner {
+    background-color: $primary-color;
+}
+.secondary-button .button-inner {
+    background: $black;
+    a {
+        color: $white;
+    }
+}
+
+/*-------------------------------------------
+      -----   Hover effects     -----   
+------------------------------------------- */
+.button.primary-button .button-inner:hover {
+    background-color: $primary-color-light;
+}
+.button.secondary-button .button-inner:hover {
+    background-color: $dark-grey;
+}
+/*-------------------------------------------
+      -----    Different sizes      -----   
+------------------------------------------- */
+
+.fullwidth-btn .button-inner {
+    padding: 1.5em 2em;
+    width: 100%;
+    text-align: center;
+}
+.big-btn .button-inner {
+    padding: 2em 4em;
+}
+.small-btn .button-inner {
+    padding: 1em 2em;
+}
+.xsmall-btn .button-inner {
+    padding: 0.8em 1.9em;
+    a { 
+        font-size: 0.8em;
+    }
+}
+
+/*-------------------------------------------
+      -----   SUBMIT buttons      -----   
+------------------------------------------- */
+
+// Center input-cta
+.input-cta {
+    &.center {
+//        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+}
+input + .input-cta input[type="submit"],
+input + .input-cta input[type="reset"]{
+    margin-top: $base * 2;
+    margin-bottom: $base * 3;
+}
+textarea + .input-cta input[type="submit"],
+textarea + .input-cta input[type="reset"]{
+    margin-top: $base * 2;
+    margin-bottom: $base * 3;
+}
+.input-cta > input[type="submit"],
+.input-cta > input[type="reset"],
+.input-cta > input[type="button"]{
+    // clear style
+    border: 2px solid $primary-color;
+    transition: all 200ms ease-in;
+    padding: $base $base * 2;
+    
+    // primary-button
+    display: inline-block;
+    width: auto;
+    border-radius: $base * 4;
+    
+        // primary-button a
+        font-family: 'Raleway', Arial, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    
+    //extra 
+    background-color: rgba(255,255,255,0);
+    transition: background-color 100ms ease-in-out;
+    margin: $base 0;
+    &:hover {
+        border-color: $black;
+    }
+    &:focus {
+        outline: -webkit-focus-ring-color auto 5px !important;
+    }
+}
+
+// Diffrent sizes 
+.input-cta.big-btn > input[type="submit"],
+.input-cta.big-btn > input[type="reset"] { 
+    padding: $base * 3 $base * 4;
+}
+.input-cta.small-btn > input[type="submit"],
+.input-cta.small-btn > input[type="reset"] { 
+    padding: $base * 2.5 $base * 3;
+}
+.input-cta.xsmall-btn > input[type="submit"],
+.input-cta.xsmall-btn > input[type="reset"] { 
+    padding: $base * 1.85 $base * 2;
+    font-size: 0.8em;
+}
+
+
+// Diffrent positions
+.input-cta.center > input[type="submit"],
+.input-cta.center > input[type="reset"] {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.input-cta.right > input[type="submit"],
+.input-cta.right > input[type="reset"] {
+    float: right;
+}
+
+
+.input-cta.primary-color > input[type="submit"],
+.input-cta.primary-color > input[type="reset"] {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+        background-color: $primary-color-light;
+        border-color: $primary-color-light;
+    }
+}
+.input-cta.small > input[type="submit"],
+.input-cta.small > input[type="reset"]{
+    padding: $base * 2 $base * 3;
+    padding-right: $base * 8;
+}
+.input-cta.fullwidth-input > input[type="submit"],
+.input-cta.fullwidth-input > input[type="reset"],
+.input-cta.fullwidth-input > input[type="button"]{
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+// --------------------------- INPUT CTA WITH ICON ARROW
+.input-cta.arrow-icon {
+    position: relative;
+    width: auto;
+    input[type="submit"] {
+        padding-right: $base * 8;
+    }
+}
+.input-cta.arrow-icon.fullwidth-input { 
+    input[type="submit"] {
+        padding-right: 0;
+    }
+}
+.input-cta.arrow-icon::after {
+    content: url(../../images/icons/arrow.png);
+    position: absolute;
+    top: 0;
+    right: $base * 3;
+    width: 25px;
+    height: 25px;  
+    transition: right 100ms ease-in-out;
+}
+.input-cta.arrow-icon:hover::after {
+    right: $base * 2;
+}
+
+// --------------------------- INPUT CTA WITH ICON PERSON
+.input-cta.person-icon {
+    position: relative;
+    width: auto;
+    input[type="submit"] {
+        padding-left: $base * 7;
+    }
+}
+.input-cta.person-icon.fullwidth-input { 
+    input[type="submit"] {
+        padding-right: 0;
+    }
+}
+.input-cta.person-icon::after {
+    content: url(../../images/icons/perm_identity.svg);
+    position: absolute;
+    top: -4px;
+    left: $base * 3;
+    width: 25px;
+    height: 25px;  
+}
+
+.button.disabled {
+    border-color: $grey;
+    color: $grey;
+    .button-inner {
+        border-color: $grey;
+        color: $grey;
+        background-color: #FFF;
+        &:hover {
+            border-color: $grey;
+        }
+    }
+    a {
+        color: $grey;
+        &:hover {
+            color: $grey;
+            border-color: $grey;
+        }
+    }
+}

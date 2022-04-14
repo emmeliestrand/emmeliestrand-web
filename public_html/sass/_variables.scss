@@ -1,0 +1,52 @@
+/*----------------------------------------------------
+
+      VARIABLES
+
+--------------------------------------------------- */
+
+/* -------------------------------------------------------
+    Grid and Devices
+------------------------------------------------------- */
+
+$base:                  15px;
+$base2:                 $base * 2;
+
+/* -------------------------------------------------------
+    Breakpoints
+------------------------------------------------------- */
+
+$mobil-xl:              375px;
+$tablet:                768px; 
+$desktop:               1024px;
+$desktop-hd:            1920px;
+
+/* -------------------------------------------------------
+    Colors
+------------------------------------------------------- */
+
+$black:                 #212121;
+$dark-grey:             #434343;
+$text-grey:             #535353;
+$white:                 #FFFFFF;
+$offwhite:              #f7f7f7;
+
+$light-grey:            #e6e7e7;
+$grey:                  #9c9e9f;
+$medium-grey:           #7c7e7f;
+
+$primary-color:         #82D7D0;
+$primary-color-dark:    #416B68;
+$primary-color-light:   #b4e7e2;
+
+$secondary-color:       #FF206E;
+$secondary-color-dark:  #B2164D;
+$secondary-color-light: #ff79a8;
+
+$correct-color:         #bdc9a6;
+$correct-color-dark:    #7c944e;
+
+$error-color:           #db9b9b;
+$error-color-dark:      #b73737;
+
+
+

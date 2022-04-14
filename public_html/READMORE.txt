@@ -1,0 +1,7 @@
+WINDOWS: sass --watch sass/index.scss public/css/index.css
+
+MAC: sass --watch ./sass/index.scss:./public/css/index.css
+
+not working sass --watch a.scss:a.css --style compressed
+
+not working sass --watch sass/index.scss public/css/index.css --style compressed

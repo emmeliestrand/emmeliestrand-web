@@ -1,0 +1,43 @@
+/*-------------------------------------------
+      -----    For Stylegudie, 
+               not in use on site     -----   
+------------------------------------------- */
+.stylegudie-header {
+    text-align: center;
+    ul {
+        display: inline-block;
+        li {
+            display: inline-block;
+            padding: 0 $base * 2;
+            a {
+                color: $black; 
+                text-decoration: none;
+            }
+            &.active {
+                a {
+                    text-decoration: underline;
+                    color: $primary-color-dark;
+                }
+            }
+            &:hover {
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+h1.stylegudie-headline {
+    margin: $base * 8 0 $base * 2 0;
+    color: $primary-color;
+    font-family: "Raleway", san-serif;
+}
+h2.stylegudie-headline {
+    margin: $base * 12 0 $base * 2 0;
+    font-family: "Raleway", san-serif;
+}
+h2.h1.stylegudie-headline {
+    font-size: 2.8em;
+    margin-bottom: $base * 2;
+    font-family: "Raleway", san-serif;
+}

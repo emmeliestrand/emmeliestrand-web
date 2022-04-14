@@ -1,0 +1,16 @@
+.o-cookiebanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: $primary-color;
+    .inner {
+        margin: $base;
+        display: flex;
+        flex-direction: column;
+        > .button {
+            align-self: flex-end;
+        }
+    }
+}

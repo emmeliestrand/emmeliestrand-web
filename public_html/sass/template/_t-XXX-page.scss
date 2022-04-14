@@ -1,0 +1,270 @@
+/*-------------------------------------------
+  -----     t-XXX-page - template   -----   
+------------------------------------------- */
+
+/*-------------------------------------------
+  -----     CONTENT PAGE   -----   
+------------------------------------------- */
+
+.t-content-page {
+    .page-main .section-inner {
+        padding-left: 0;
+    }
+}
+
+.t-content-page { 
+    div.ingress + figure.image {
+        margin: $base * 2 0;
+    }
+    div.ingress + section {
+    }
+    h2 + p {
+        margin-top: $base * 2;
+    }
+    p + h2 {
+        margin-top: $base * 3;
+    }
+}
+
+/*-------------------------------------------
+  -----     SUB NAIVGATION   -----   
+------------------------------------------- */
+.t-content-page {
+    .foldin-aside {
+        display: none;
+    }
+}
+.t-mypage-page { 
+    .foldin-aside {
+        position: relative;
+        height: $base * 2;
+        margin: -$base * 4 0 $base * 4 0;
+        cursor: pointer;
+        background-color: #FFF;
+        &::after {
+            content: url(../images/icons/menu.svg);
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 500;
+        }
+        &::before {
+            content: "Meny mina sidor";
+            position: absolute;
+            right: $base * 4;
+            top: 3px;
+            z-index: 500;
+        }
+        .sub-menu {
+            margin-left: -18px;
+            margin-right: -18px;
+        }
+    }
+    .sub-menu {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #FFF;
+        transition: max-height 200ms ease-in-out;
+        .hidden {
+            opacity: 0;
+        }
+        ul li {
+            margin-right: 0;
+        }
+    }
+    // when foldout
+    .is-foldout {
+//        z-index: 1000;
+        z-index: 600;
+         &::after {
+            content: url(../images/icons/close.svg);
+        }
+    }
+    
+    // show notification
+    // not in use 
+    .foldin-aside.show-notification {
+        position: relative;
+        .notification-symbol {
+            content: "";
+            height: 11px;
+            width: 11px;
+            background-color: $primary-color;
+            border-radius: 50%;
+            position: absolute;
+            top: -1px;
+            right: 4px;
+            z-index: 200;
+        }
+    }
+}
+.t-mypage-page { 
+    .foldin-aside {
+        &::before {
+            content: "Meny mina sidor";
+            position: absolute;
+            right: $base * 4;
+            top: 3px;
+            z-index: 500;
+        }
+    }
+    h1 {
+        font-size: 2.8em;
+    }
+}
+// when the mypage menu is open...
+body.mypage-navigation-is-open {
+    position: relative;
+//    overflow: hidden;
+    .t-mypage-page .page-main::after {
+        content: "";
+        position: absolute;
+        top: 124px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3);
+    }
+}
+
+/*-------------------------------------------
+  -----     MYPAGE   -----   
+------------------------------------------- */
+.t-mypage-page {
+    .section-inner .section-inner {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .page-main::after {
+        content: "";
+        transition: all 200ms ease-in;
+    }
+    section:last-of-type .section-inner {
+        padding-bottom: $base * 2;
+    }
+}
+
+/*-------------------------------------------
+      -----    Media query     -----   
+------------------------------------------- */
+@media (min-width: 480px) { 
+
+}
+
+@media (min-width: $tablet) { 
+
+}
+@media (min-width: $desktop) {
+    
+    /*-------------------------------------------
+      -----     GENERLA TEMPLATES   -----   
+    ------------------------------------------- */
+    .t-content-page {
+        .foldin-aside {
+            display: block;
+        }
+        h1 {
+            font-size: 2em;
+        }
+    }
+    
+    body.mypage-navigation-is-open {
+        position: inherit;
+        .t-mypage-page .page-main::after {
+            content: "";
+            position: inherit;
+            top: inherit;
+            left: inherit;
+            bottom: inherit;
+            right: inherit;
+            background-color: rgba(0,0,0,0);
+            display: none;
+        }
+    }
+    .t-object-page,
+    .t-content-page,
+    .t-mypage-page {
+        overflow: hidden;
+        section .section-inner {
+            overflow: hidden;
+        }
+        .page-main,
+        .page-aside {
+            float: left;
+        }
+        .page-main {
+            width: calc(99% / 3 * 2);
+            margin-bottom: $base * 4;
+        }
+        .page-aside {
+            width: calc(99% / 3 );
+        }
+    }
+    
+    
+    /*-------------------------------------------
+      -----     CONTENT PAGE   -----   
+    ------------------------------------------- */
+
+    .t-content-page {
+        .page-main {
+            padding-left: $base * 3;
+        }
+    }
+    /*-------------------------------------------
+      -----     NAVIGATION   -----   
+    ------------------------------------------- */
+    .t-mypage-page .foldin-aside .sub-menu {
+        margin-left: 0;
+        margin-right: $base * 2;
+    }
+    .t-mypage-page,
+    .t-content-page{
+        .foldin-aside {
+            position: inherit;
+            height: auto;
+            margin: 0;
+            &::after {
+                content: "";
+                position: inherit;
+            }
+            &::before {
+                content: "";
+                position: inherit;
+            }
+        }
+        .sub-menu {
+            max-height: none;
+            overflow: inherit;
+            background-color: rgba(255,255,255,0);
+            .hidden {
+                opacity: 1;
+            }
+            ul {
+                height: auto;
+            }
+            ul li {
+                margin-right: $base * 4;
+            }
+        }
+        // when foldout
+        .is-foldout {
+            .sub-menu ul {
+//                overflow: inherit;
+            }
+        }
+         // show notification
+        .foldin-aside.show-notification {
+            position: inherit;
+            .notification-symbol {
+                content: "";
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-hd) { 
+
+
+}

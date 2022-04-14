@@ -1,0 +1,30 @@
+.m-two-column {
+    display: flex;
+    flex-direction: column;
+    & > div + div {
+        margin-top: $base * 2;
+    }
+}
+/*-------------------------------------------
+      -----    Media query     -----   
+------------------------------------------- */
+@media (min-width: $tablet) {
+    .m-two-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        > div {
+            width: 50%;
+            &:first-of-type {
+                padding-left: $base * 2;
+            }
+        }
+        & > div + div {
+            margin-top: 0;
+            //margin-left: $base * 2;
+        }
+    }
+}
+@media (min-width: $desktop) { 
+
+}

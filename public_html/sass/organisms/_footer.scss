@@ -1,0 +1,45 @@
+/* -------------------------------------------------------
+            
+        Organism FOOTER
+
+------------------------------------------------------- */
+
+footer {
+    background-color: $black;
+    padding: $base * 2 $base * 3 $base * 4 $base * 3;
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        div {
+            color: $white;
+            a {
+                color: $white;
+            }
+            & + div {
+                margin-top: $base;
+            }
+            &.logotype {
+                margin-bottom: $base * 2;
+                > img {
+                    max-width: 160px;
+                    height: auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------------------------
+      -----    Media query     -----   
+------------------------------------------- */
+@media (min-width: $tablet) { 
+    
+}
+@media (min-width: $desktop) { 
+
+}
+@media (min-width: $desktop-hd) { 
+    
+}

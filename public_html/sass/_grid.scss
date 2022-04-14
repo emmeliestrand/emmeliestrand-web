@@ -1,0 +1,98 @@
+/*----------------------------------------------------
+
+      GRID - base 
+
+--------------------------------------------------- */
+main {
+    margin-top: 95px;
+}
+/*-------------------------------------------
+      -----    Section     -----   
+------------------------------------------- */
+
+.section-inner {
+    padding: $base * 4 $base;
+    &.small {
+        padding: $base * 2 $base * 2;
+    }
+    &.big {
+        padding: $base * 8 $base * 2;
+    }
+    &.fullwidth {
+        padding: $base * 8 0;
+        max-width: 100%;
+    }
+    &.no-bottom-padding {
+        padding-bottom: 0;
+    }
+}
+.section-inner.have-border-top {
+    border-top: 1px solid $grey;
+    padding-top: $base * 4;
+}
+.have-sub-header {
+    position: relative;
+}
+
+/*-------------------------------------------
+      -----    Aside    -----   
+------------------------------------------- */
+
+.aside-inner {
+    padding: $base * 4 $base * 2;
+    &.small {
+        padding: $base * 2 $base * 2;
+    }
+    &.big {
+        padding: $base * 8 $base * 2;
+    }
+}
+.flex-parent {
+    list-style: none;
+    flex-wrap: wrap;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    justify-content: center;
+    > div,
+    > li {
+        align-self: stretch;
+    }
+}
+/*-------------------------------------------
+      -----    Media query     -----   
+------------------------------------------- */
+@media (min-width: $tablet) { 
+    .section-inner {
+        &.slimmer {
+            padding-left: $base * 10;
+            padding-right: $base * 10;
+        }
+    }
+    aside {
+        &.half-size {
+            width: 50%;
+        }
+        &.third-size {
+            width: 50%;
+        }
+    }
+    main {
+        margin-top: 60px;
+    }
+}
+@media (min-width: $desktop) { 
+    .section-inner {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    // try to fix padding to footer and make space for the illustration
+    main > section:last-of-type > .section-inner {
+        // eee
+    }
+}
+@media (min-width: $desktop-hd) { 
+
+}

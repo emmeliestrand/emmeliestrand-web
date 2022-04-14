@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadsholmen - Atomic design LookBook</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;1,800&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- SCSS SMACC and Atomic Design system -->
+    <link href="public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <main>
+        <section class="hero" style="padding: 100px 0">
+            <div class="section-inner">
+                <h5 class="center">Atomic design system</h5>
+                <h1 class="have-underlined-bottom center">Digital StyleGudie</h1>
+                <h2 class="center">Molecules for Stadsholmen</h2>
+            </div>
+             <div class="stylegudie-header">
+                <h4>Links around the digital stylegudie</h4>
+                <ul>
+                    <li>
+                        <a href="atoms.html">Atoms</a>
+                    </li>
+                    <li class="active">
+                        <a href="molecules.html">Molecules</a>
+                    </li>
+                    <li>
+                        <a href="organisms.html">Organisms</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        
+        <section class="have-background">
+            <div class="section-inner small">
+                <h1 class="stylegudie-headline">Breadcrums</h1>
+                <h2 class="stylegudie-headline">Brödsmulor</h2>
+                <h4>(klass: .m-breadcrums)</h4>
+<!--                Note that breadcrums have a "small" class in section-inner-->
+                <!-- MOLECULE BREADCRUMS STARTS HERE -->
+                <div class="m-breadcrums">
+                    <div><a href="#">Hem</a></div>
+                    <div><a href="#">Stadsholmen</a></div>
+<!--                    Active on the active page -->
+                    <div class="is-active"><a href="#">Press</a></div>
+                </div>
+                <!-- END -->
+            </div>
+        </section>
+        <section>
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Textblock</h1>
+                <h2 class="stylegudie-headline">Rubrik - Ingress - Knapp</h2>
+                <h4>(klass: .m-headline-ingress-button)</h4>
+                
+                <!-- MOLECULE HEADLINE INGRESS BUTTON STARTS HERE -->
+                <div class="m-headline-ingress-button">
+                    <h1 class="center have-underlined-bottom">Vi är Stockholms själ</h1>
+                    <p class="ingress center">Stadsholmen är ett fastighetsbolag i Stockholm. Vi förvaltar historiska hus med en levande historia, allt från enkla träkåkar och gårdar till palats från 1700- och 1800-tavar. Det finns många fastighetsbolag men bara ett Stadsholmen.</p>
+                    <div class="button primary-button center big-btn ockra arrow-icon">
+                        <div class="button-inner">
+                            <a href="#">Våra fastigheter</a>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 class="center">Eller</h4>
+                    <br>
+                    <div class="button secondary-button center arrow-icon">
+                        <div class="button-inner">
+                            <a href="#">Våra fastigheter</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END -->
+                
+            </div>
+        </section>
+        <section class="have-background">
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Nyheter</h1>
+                <h2 class="stylegudie-headline">Nyhet - singel</h2>
+                <h4>(klass: .m-news-puff)</h4>
+<!--                One single news puff -->
+                <!-- MOLECULE NEWS PUFF STARTS HERE -->
+                <div class="m-news-puff">
+                     <div class="inner have-background">
+                        <h4>Stadsholmen</h4>
+                        <h3>Öppet hus i helgen 6-8 oktober</h3>
+                        <p>(Saloon) (Three old men are sitting at a table in the saloon talking amongst themselves.) Take a look at what just breezed in the door. Why I didn't know the circus was in town! Looks like he got that shirt off'n a dead Chinee.</p>
+                        <a href="#" class="cta-link">Läs hela nyheten</a>
+                    </div>
+                </div>
+                <!-- END -->
+                <h2 class="stylegudie-headline">Nyheter - flera stycken</h2>
+                <h4>(element: div.flex-parent klass: .m-news-puff)</h4>
+<!--                Parent with class flex-parent IMPORTANT!!! -->
+                <div class="flex-parent">
+                    <div class="m-news-puff">
+                         <div class="inner have-background">
+                            <h4>Stadsholmen</h4>
+                            <h3>Öppet hus i helgen 6-8 oktober</h3>
+                            <p>(Saloon) (Three old men are sitting at a table in the saloon talking amongst themselves.) Take a look at what just breezed in the door. Why I didn't know the circus was in town! Looks like he got that shirt off'n a dead Chinee.  Why I didn't know the circus was in town! Looks like he got that shirt off'n a dead Chinee.</p>
+                            <a href="#" class="cta-link">Läs hela nyheten</a>
+                        </div>
+                    </div>
+                    <div class="m-news-puff">
+                         <div class="inner have-background">
+                            <h4>Stadsholmen</h4>
+                            <h3>Öppet hus i helgen 6-8 oktober</h3>
+                            <p>(Saloon) (Three old men are sitting at a table in the saloon talking amongst themselves.) Take a look at what just breezed in the door. Why I didn't know the circus was in town! Looks like he got that shirt off'n a dead Chinee.</p>
+                            <a href="#" class="cta-link">Läs hela nyheten</a>
+                        </div>
+                    </div>
+                    <div class="m-news-puff">
+                        <div class="inner have-background">
+                            <h4>Stadsholmen</h4>
+                            <h3>Öppet hus i helgen 6-8 oktober</h3>
+                            <p>(Saloon) (Three old men are sitting at a table in the saloon talking amongst themselves.) Take a look at what just breezed in the door. Why I didn't know the circus was in town! Looks like he got that shirt off'n a dead Chinee.</p>
+                            <a href="#" class="cta-link">Läs hela nyheten</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<!--        If the block has parallax - put in this class on the section-tag    -->
+        <section class="real-estate-blocks">
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Listning av lediga fastigheter</h1>
+                <h2 class="stylegudie-headline">Fastighet - singel</h2>
+                <h4>(klass: .m-real-estat-block)</h4>
+                
+                <!-- MOLECULE REAL ESTAT BLOCK STARTS HERE -->
+                <div class="m-real-estat-block">
+                    <a href="#" class="inner have-background">
+                        <div class="parallax-image-box puff-size">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                        </div>
+                        <div class="textarea">
+                            <h3 class="ockra">Prästgatan 13 </h3>
+                            <h4>Södermalm</h4>
+                        </div>
+                    </a>
+                </div>
+                <!-- END -->
+                <!-- NEW DESIGN -->
+                 <div class="m-real-estat-block">
+                    <a href="#" class="inner have-background">
+                        <div class="tag area">södermalm</div>
+                        <div class="parallax-image-box puff-size">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                        </div>
+                        <div class="textarea">
+                            <h3 class="ockra">Barnängens gård 1</h3>
+                            <h4 class="address-block check-height">TEGELVIKSGATAN 42, TEGELVIKSGATAN 42A-B, TEGELVIKSGATAN 44, TEGELVIKSGATAN 54, TENGDAHLSGATAN 32, SÖDERMALM</h4>
+                        </div>
+                    </a>
+                </div>
+                <!-- END -->
+                <div class="m-real-estat-block">
+                    <a href="#" class="inner have-background">
+                        <div class="tag area">södermalm</div>
+                        <div class="parallax-image-box puff-size">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                        </div>
+                        <div class="textarea">
+                            <h3 class="ockra">Barnängens gård 1</h3>
+                            <h4 class="address-block check-height">TEGELVIKSGATAN 42</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="m-real-estat-block">
+                    <a href="#" class="inner have-background">
+                        <div class="tag area">södermalm</div>
+                        <div class="parallax-image-box puff-size">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                        </div>
+                        <div class="textarea">
+                            <h3 class="ockra">Barnängens gård 1</h3>
+                            <h4 class="address-block check-height">TEGELVIKSGATAN 42, TEGELVIKSGATAN 42A-B, TEGELVIKSGATAN 44, TEGELVIKSGATAN 54, TENGDAHLSGATAN 32, SÖDERMALM</h4>
+                        </div>
+                    </a>
+                </div>
+                
+                <h2 class="stylegudie-headline">Fastigheter - flera stycken</h2>
+                <h4>(element: .flex-parent klass: .m-real-estat-block)</h4>
+                <div class="flex-parent">
+                    <div class="m-real-estat-block">
+                        <a href="#" class="inner have-background">
+                            <div class="parallax-image-box puff-size">
+                                <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                    <img src="images/trapuppgang.jpg">
+                                </figure>
+                            </div>
+                            <div class="textarea">
+                                <h3 class="ockra">Prästgatanvägen 13 AB, Prästgatanggg 15A-C, Prästgatan 54, Prästgatan 56 </h3>
+                                <h4>Södermalm</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="m-real-estat-block">
+                        <a href="#" class="inner have-background">
+                            <div class="parallax-image-box puff-size">
+                                <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                    <img src="images/trapuppgang.jpg">
+                                </figure>
+                            </div>
+                            <div class="textarea">
+                                <h3 class="ockra">Prästgatan 13 </h3>
+                                <h4>Södermalm</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="m-real-estat-block">
+                        <a href="#" class="inner have-background">
+                            <div class="parallax-image-box puff-size">
+                                <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                    <img src="images/trapuppgang.jpg">
+                                </figure>
+                            </div>
+                            <div class="textarea">
+                                <h3 class="ockra">Prästgatan 13 </h3>
+                                <h4>Södermalm</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="have-background">
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Listning av lediga lokaler</h1>
+                <h2 class="stylegudie-headline">Lokaler</h2>
+                <h4>(element: ul.premises-list klass: .m-premises-list-item)</h4>
+                <ul class="premises-list">
+                    
+                    
+                    <!-- MOLECULE PREMISIS LIST ITEM STARTS HERE -->
+                    <li class="m-premises-list-item">
+                        <div class="image-box">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                        </div>
+                        <div class="textarea">
+                            <h2>Södermälarstrand 12, Södermalm</h2>
+                            <h4>Södermalm</h4>
+                            <p class="smaller">Whoa, they really cred with your parent's first meeting. They don't meet, they don't fall in love, they won't get married and they wont have kids.</p>
+                            <p class="smaller">(to himself) Mission accomplished. (Street) (w.t) That means Jennifer's OK and Einie's OK, right? (DeLorean) (w.t) That's right Marty! It's the ripple effect, the future is back. Now var's go home!</p>
+                        </div>
+                        <div class="aside">
+                            <h3>Fakta:</h3>
+                            <ul class="data-list">
+                                <li>Typ av lokal: Kontor</li>
+                                <li>Tillträde: Enligt överenskommelse</li>
+                                <li>Kallhyra: 45 000 kr/mån</li>
+                            </ul>
+                            <a href="#" class="cta-link">Läs mer om lokalen</a>
+                        </div>
+                    </li>
+                    <!-- END -->
+                    
+                    
+                    <li class="m-premises-list-item">
+                       <div class="image-box">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                        </div>
+                        <div class="textarea">
+                            <h2>Södermälarstrand 12, Södermalm</h2>
+                            <h4>Södermalm</h4>
+                            <p class="smaller">Whoa, they really cle remember, interfered with your parent's first meeting. They don't meet, they don't fall in love, they won't get married and they wont have kids.</p>
+                            <p class="smaller">(to himself) Mission accomplished. (Street) (w.t) That means Jennifer's OK and Einie's OK, right? (DeLorean) (w.t) That's right Marty! It's the ripple effect, the future is back. Now var's go home!</p>
+                        </div>
+                        <div class="aside">
+                            <h3>Fakta:</h3>
+                            <ul class="data-list">
+                                <li>Typ av lokal: Kontor</li>
+                                <li>Tillträde: Enligt överenskommelse</li>
+                                <li>Kallhyra: 45 000 kr/mån</li>
+                            </ul>
+                            <a href="#" class="cta-link">Läs mer om lokalen</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Ingångar</h1>
+                <h2 class="stylegudie-headline">Ensam ingång</h2>
+                <h4>(klass: .m-entry-list-item)</h4>
+                <ul class="entry-list">
+                    
+                    
+                    <!-- MOLECULE ENTRY LIST ITEM STARTS HERE -->
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/avatar.png)">
+                                <img src="images/avatar.png">
+                            </figure>
+                            <h2>Bostad</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                    <!-- END -->
+                    
+                    
+                </ul>
+                <h2 class="stylegudie-headline">Flera ingångar</h2>
+                <h4>(element: ul.entry-list.flex-parent klass: .m-entry-list-item)</h4>
+                <ul class="entry-list flex-parent">
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/avatar.png)">
+                                <img src="images/avatar.png">
+                            </figure>
+                            <h2>Bostad</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/avatar.png)">
+                                <img src="images/avatar.png">
+                            </figure>
+                            <h2>Bostad</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/avatar.png)">
+                                <img src="images/avatar.png">
+                            </figure>
+                            <h2>Bostad</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                </ul>
+                <h2 class="stylegudie-headline">Mina sidor - Flera ingångar</h2>
+                <h4>(klass: .m-entry-list-item.text-on-image)</h4>
+                <ul class="entry-list flex-parent">
+                    
+                    <!-- MOLECULE ENTRY LIST ITEM STARTS HERE -->
+                    <!-- text on image -->
+                    <li class="m-entry-list-item text-on-image">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/avatar.png)">
+                                <img src="images/avatar.png">
+                            </figure>
+                            <h2>Felanmälan</h2>
+                        </a>
+                    </li>
+                    <!-- END -->
+                    
+                    
+                    <li class="m-entry-list-item text-on-image">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/avatar.png)">
+                                <img src="images/avatar.png">
+                            </figure>
+                            <h2>Hyresavier</h2>
+                        </a>
+                    </li>
+                    <li class="m-entry-list-item text-on-image">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/avatar.png)">
+                                <img src="images/avatar.png">
+                            </figure>
+                            <h2>Blanketter</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="have-background">
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Listning</h1>
+                <h2 class="stylegudie-headline">Pressrum</h2>
+                <h4>(klass: .m-repotage-list-item)</h4>
+                <ul class="repotage-list">
+                    
+                    
+                    <!-- MOLECULE REPOTAGE LIST ITEM STARTS HERE -->
+                    <li class="m-repotage-list-item">
+                        <a href="#" target="_blank">
+                            <h4>1 februari 2018 10:09</h4>
+                            <h3>Repotage i SVT nyheter Stockholm</h3>
+                        </a>
+                    </li>
+                    <!-- END -->
+                    
+                    
+                    <li class="m-repotage-list-item">
+                        <a href="#" target="_blank">
+                            <h4>1 februari 2018 10:09</h4>
+                            <h3>Repotage i SVT nyheter Stockholm</h3>
+                        </a>
+                    </li>
+                </ul>
+                
+                <h2 class="stylegudie-headline">Mina sidor - Mina uppgifter</h2>
+                <h4>(klass: .m-mypage-list-item)</h4>
+                <ul class="mypage-info-list">
+                    
+                    
+                    <!-- <!-- MOLECULE MYPAGE LIST ITEM STARTS HERE -->
+                    <li class="m-mypage-list-item">
+                        <div class="bold">Avtal: </div>
+                        <div>162002012 (Bostad)</div>
+                    </li>
+                    <!-- END -->
+                    
+                    
+                    <li class="m-mypage-list-item">
+                        <div class="bold">Adress: </div>
+                        <div>Årstagränd 83, BV</div>
+                    </li>
+                    <li class="m-mypage-list-item">
+                        <div class="bold">Lägenhetsnr: </div>
+                        <div>1002</div>
+                    </li>
+                    <li class="m-mypage-list-item">
+                        <div class="bold">Storlek: </div>
+                        <div>72 kvm</div>
+                    </li>
+                    <li class="m-mypage-list-item">
+                        <div class="bold">Antal rum: </div>
+                        <div>4 RoK</div>
+                    </li>
+                    <li class="m-mypage-list-item">
+                        <a href="#" class="linktext">Planritning</a>
+                    </li>
+                </ul>
+                
+                <h2 class="stylegudie-headline">Mina sidor - Meddelanden</h2>
+                <h4>(klass: .m-message-list-item)</h4>
+                <ul class="message-list">
+                    
+                    
+                    <!-- MOLECULE MESSAGE LIS TITEM STARTS HERE -->
+                    <li class="m-message-list-item">
+                        <div class="click-to-toggle-foldout-content">
+                            <div class="msg-top is-unread">
+                                <h4>Trapphusinformation 21 juni 2018 08:12</h4>
+                                <div class="unread">Oläst</div>
+                            </div>
+                            <h3>Trapphusinformation Juni</h3>
+                        </div>
+                        <div class="msg-content foldout-content">
+                            <p>Precisely. Whoa, this is heavy. There's that word again, heavy. Why are things so heavy in the future? Is there a problem with the Earth's gravitational pull? What? The only way we're gonna get those two to successfully meet is if they're alone together. So you've got to get your father and mother to interact at some sort of social…</p>
+                            
+                            <p>McFly farm! AHH!! (Sits up in bed. He is in a log cabin, a single room with a bed. A woman is sitting at a desk on a chair near the bed.) Well you're my-my - my... (Suddenly realizing that although he knows the last name, he doesn't know which member of the family this is.) Who are you? Name's McFly. Maggie McFly. McFly. Maggie. That's Mrs. McFly, and don't you be forgettin' the misses! And what might your name be sir? Well, it's Mc…(he stops suddenly realizing that he shouldn't tell her his real name.) Eastwood...uh...Clint...Clint Eastwood? (grins sheepishly)</p>
+                        </div>
+                    </li>
+                    <!-- END -->
+                    
+                    
+                </ul>  
+                <h2 class="stylegudie-headline">Mina sidor - Äldre hyresavier</h2>
+                <h4>(klass: .m-message-list-item.rent-receipt)</h4>
+                <ul class="rent-receipt-list">
+                    
+                    <!-- MOLECULE MESSAGE LIST ITEM RENT RECEIPT STARTS HERE -->
+                    <li class="m-message-list-item rent-receipt">
+                        <div class="click-to-toggle-foldout-content">
+                            <h3><span class="period-month">September</span> <span class="period-year">2018</span></h3>
+                            <h4>Betalad</h4>
+                        </div>
+                        <div class="msg-content foldout-content">
+                            <div class="two-column-table">
+
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Förfallodatum:
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-05-31</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Hyresperiod
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-06</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="row">
+                                    <div class="column-one">
+                                        OCR-nr
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>10250800450120180607</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        FakturaId (mest förvirrande att skriva ut?)
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>7103128</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Fakturanummer (mest förvirrande att skriva ut?)
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>7011887</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Saldo
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>0,00 kr</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Räkningsbelopp
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>0,00 kr</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Räkningsdatum ? 
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-05-09</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Autogirostatus
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>(finns, ibland tomt värde?)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
+                                 <div class="row">
+                                    <div class="column-one">
+                                        Namn
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                 <div class="row">
+                                    <div class="column-one">
+                                        Adress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        c/o adress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Postnummer
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Postadress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Autogiro
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li> XXX </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Mottagare
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li> XXX </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <!-- END -->
+                    
+                    
+                    <li class="m-message-list-item rent-receipt">
+                        <div class="click-to-toggle-foldout-content">
+                            <h3><span class="period-month">September</span> <span class="period-year">2018</span></h3>
+                            <h4>Betalad</h4>
+                        </div>
+                        <div class="msg-content foldout-content">
+                            <div class="two-column-table">
+
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Förfallodatum:
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-05-31</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Hyresperiod
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-06</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="row">
+                                    <div class="column-one">
+                                        OCR-nr
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>10250800450120180607</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        FakturaId (mest förvirrande att skriva ut?)
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>7103128</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Fakturanummer (mest förvirrande att skriva ut?)
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>7011887</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Saldo
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>0,00 kr</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Räkningsbelopp
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>0,00 kr</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Räkningsdatum ? 
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-05-09</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Autogirostatus
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>(finns, ibland tomt värde?)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
+                                 <div class="row">
+                                    <div class="column-one">
+                                        Namn
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                 <div class="row">
+                                    <div class="column-one">
+                                        Adress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        c/o adress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Postnummer
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Postadress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Autogiro
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li> XXX </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Mottagare
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li> XXX </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-message-list-item rent-receipt">
+                        <div class="click-to-toggle-foldout-content">
+                            <h3><span class="period-month">September</span> <span class="period-year">2018</span></h3>
+                            <h4>Betalad</h4>
+                        </div>
+                        <div class="msg-content foldout-content">
+                            <div class="two-column-table">
+
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Förfallodatum:
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-05-31</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Hyresperiod
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-06</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="row">
+                                    <div class="column-one">
+                                        OCR-nr
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>10250800450120180607</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        FakturaId (mest förvirrande att skriva ut?)
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>7103128</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Fakturanummer (mest förvirrande att skriva ut?)
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>7011887</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Saldo
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>0,00 kr</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Räkningsbelopp
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>0,00 kr</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Räkningsdatum ? 
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-05-09</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Autogirostatus
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>(finns, ibland tomt värde?)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
+                                 <div class="row">
+                                    <div class="column-one">
+                                        Namn
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                 <div class="row">
+                                    <div class="column-one">
+                                        Adress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        c/o adress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Postnummer
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Postadress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Autogiro
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li> XXX </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Mottagare
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li> XXX </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-message-list-item rent-receipt">
+                        <div class="click-to-toggle-foldout-content">
+                            <h3><span class="period-month">September</span> <span class="period-year">2018</span></h3>
+                            <h4>Betalad</h4>
+                        </div>
+                        <div class="msg-content foldout-content">
+                            <div class="two-column-table">
+
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Förfallodatum:
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-05-31</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Hyresperiod
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-06</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="row">
+                                    <div class="column-one">
+                                        OCR-nr
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>10250800450120180607</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        FakturaId (mest förvirrande att skriva ut?)
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>7103128</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Fakturanummer (mest förvirrande att skriva ut?)
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>7011887</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Saldo
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>0,00 kr</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Räkningsbelopp
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>0,00 kr</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Räkningsdatum ? 
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>2018-05-09</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Autogirostatus
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>(finns, ibland tomt värde?)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
+                                 <div class="row">
+                                    <div class="column-one">
+                                        Namn
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                 <div class="row">
+                                    <div class="column-one">
+                                        Adress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        c/o adress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Postnummer
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Postadress
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li>XXX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Autogiro
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li> XXX </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="row">
+                                    <div class="column-one">
+                                        Mottagare
+                                    </div>
+                                    <div class="column-two">
+                                        <ul>
+                                            <li> XXX </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </li>
+                </ul> 
+                
+                <h2 class="stylegudie-headline">Sökresultat</h2>
+                <h4>(klass: .m-searchresult-list-item)</h4>
+                <ul class="searchresult-list">
+                    
+                    
+                    <!-- MOLECUE SEARCHRESULT LIST ITEM -->
+                    <li class="m-searchresult-list-item">
+                        <a href="#" target="_blank">
+                            <h3><div class="page-name">Om Stadsholmen</div></h3>
+                            <p class="ingress">Stadsholmens historiska hus består av allt från enkla träkåkar och gårdar till palats från 1700- och 1800-tavar. Våra kulturhistoriskt värdefulla hus speglar Stockholms historia och boendeförhållanden. Det är med stor stolthet som vi förvaltar denna kulturskatt.</p>
+                            <h4><div class="post-type">Informationssida</div> <div class="pub-date">1 februari 2018</div></h4>
+                            <a href="#" class="cta-link">Till sökresultat</a>
+                        </a>
+                    </li>
+                    <!-- END -->  
+                    
+                    
+                    <h2 class="stylegudie-headline">Resultat för Fastighet OCH Lokal</h2>
+                   
+                    <!-- FASTIGHET / LOKAL -->
+                    <li class="m-searchresult-list-item property">
+                        <a href="#" target="_blank">
+                            <figure class="image circle" style="background-image: url(images/Blecktornsgrand-MagnusFond.jpg)">
+                                <img src="images/Blecktornsgrand-MagnusFond.jpg"/>
+                            </figure>
+                            <div class="text">
+                                <h3><div class="page-name">Prästgatan 13, Gamla stan</div></h3>
+                                <h4><div class="post-type">Fastighet</div><div class="property-name"> Ajax 6</div></h4>
+                                <div class="cta-link">Till sökresultat</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- END -->
+                    
+                    <li class="m-searchresult-list-item">
+                        <a href="#" target="_blank">
+                            <h3><div class="page-name">Stadsholmen</div></h3>
+                            <h4><div class="post-type">Artikel</div> <div class="pub-date">1 mars 2018</div></h4>
+                            <a href="#" class="cta-link">Till sökresultat</a>
+                        </a>
+                    </li>
+                    <li class="m-searchresult-list-item">
+                        <a href="#" target="_blank">
+                            <h3><div class="page-name">Bytestorget</div></h3>
+                            <h4><div class="post-type">Nyhet</div> <div class="pub-date">1 juni 2017</div></h4>
+                            <a href="#" class="cta-link">Till sökresultat</a>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Textblock</h1>
+                <h2 class="stylegudie-headline">Används på kontakt-sidan</h2>
+                <h4>(klass: .m-textblock-list-item)</h4>
+                <ul class="textblock-list">
+                    <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <h2>Kundcenter</h2>
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                            <ul class="business-hours">
+                                <li>Måndag: 08:00-17:00 (16:30 juni-aug)</li>
+                                <li>Tisdag-tordag 08:00-15:30</li>
+                                <li>Fredag: 08:00-12:00</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="textblock-list flex-parent">
+                    <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <h2>Kundcenter</h2>
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                            <ul class="business-hours">
+                                <li>Måndag: 08:00-17:00 (16:30 juni-aug)</li>
+                                <li>Tisdag-tordag 08:00-15:30</li>
+                                <li>Fredag: 08:00-12:00</li>
+                            </ul>
+                        </div>
+                    </li>
+                     <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <h2>Kundcenter</h2>
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                            <ul class="business-hours">
+                                <li>Måndag: 08:00-17:00 (16:30 juni-aug)</li>
+                                <li>Tisdag-tordag 08:00-15:30</li>
+                                <li>Fredag: 08:00-12:00</li>
+                            </ul>
+                        </div>
+                    </li>
+                     <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <h2>Kundcenter</h2>
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                            <ul class="business-hours">
+                                <li>Måndag: 08:00-17:00 (16:30 juni-aug)</li>
+                                <li>Tisdag-tordag 08:00-15:30</li>
+                                <li>Fredag: 08:00-12:00</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="have-background">
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Pratbubbla</h1>
+                <h2 class="stylegudie-headline">Pratbubbla in action</h2>
+                <h4>(klass: .m-speech-balloon)</h4>
+                <div class="section-inner">
+                    <div class="m-speech-balloon">
+                        <div class="textarea">
+                            <p>Logga in för att hämta och fylla i dina uppgifter</p>
+                            <div class="button secondary-button xsmall-btn">
+                                <div class="button-inner">
+                                    <a href="#">Logga in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="stylegudie-headline">Pratbubbla centrerad</h2>
+                <h4>(klass: .m-speech-balloon.center)</h4>
+                <div class="section-inner">
+                    <div class="m-speech-balloon center">
+                        <div class="textarea">
+                            <p>Logga in för att hämta och fylla i dina uppgifter</p>
+                            <div class="button secondary-button xsmall-btn">
+                                <div class="button-inner">
+                                    <a href="#">Logga in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Kontaktperson</h1>
+                <h2 class="stylegudie-headline">Block för kontaktperson för lediga lokaler</h2>
+                <h4>(klass: .m-contact-person)</h4>
+                
+                
+                <div class="m-contact-person">
+                    <figure class="image circle" style="background-image: url(images/avatar.png)">
+                        <img src="images/avatar.png">
+                    </figure>
+                    <div class="textarea">
+                        <div class="name-text">Anna Andersson</div>
+                        <div class="title-text">Lokaluthyrare</div>
+                        <div class="contact-info">
+                            <p class="phone">T: <a href="#">08-123 34 34</a></p>
+                            <p class="email">E: <a href="#">anna.andersson@stadsholmen.se</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <section class="have-background">
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Intresseanmälan</h1>
+                <h2 class="stylegudie-headline">Enkolumns-formulär</h2>
+                <h4>(klass: .m-form)</h4>
+                <div class="m-form">
+                    <form method="POST" action="" name="form-interest" novalidate>
+                        <input type="text" name="firstname" id="form-interest-firstname" class="validate" placeholder="Förnamn: " required>
+                        <input type="text" name="lastname" id="form-interest-lastname" class="validate" placeholder="Efternamn: " required>
+                        <input type="text" name="company" id="form-interest-company" class="validate" placeholder="Företag: " required>
+                        <input type="number" name="phone" id="form-interest-phone" class="validate" placeholder="Telefon: " required>
+                        <input type="email" name="email" id="form-interest-email" class="validate" placeholder="Email: " required>
+                        <input type="number" name="org" id="form-interest-org" class="validate" placeholder="Organisationsnummer: " required>
+                        <input type="text" name="msg" id="form-interest-msg" class="validate" placeholder="Meddelande (frivilligt): ">
+                        <span class="input-cta arrow-icon xsmall-btn"> 
+                            <input type="submit" name="submit" id="form-interest-submit">
+                        </span> 
+                        <label for="submit" class="form-interest-gdpr"><a href="#" class="gdpr-text">Hur kommer mina uppgifter hanteras?</a></label>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Länklista</h1>
+                <h2 class="stylegudie-headline">Nerladdingsbara filer</h2>
+                <h4>(klass: .m-download-list)</h4>
+                <div class="m-download-list">
+                    <ul class="download-list">
+                        <li>
+                            <a href="#" class="download-list-link document-icon">Dokumentsnamn.pdf</a>
+                        </li>
+                        <li>
+                            <a href="#" class="download-list-link document-icon">Dokumentsnamn.pdf</a>
+                        </li>
+                        <li>
+                            <a href="#" class="download-list-link document-icon">Dokumentsnamn.pdf</a>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="stylegudie-headline">Nerladdingsbara filer - formulär</h2>
+                <h4>(klass: .m-download-list)</h4>
+                <div class="m-download-list">
+                    <ul class="download-list">
+                       <li>
+                           <form method="POST">
+                               <div class="attached-icon">
+                                   <input type="submit" name="download_faktura" value="Senaste fakturan" class="download-list-link">
+                               </div>
+                               <input type="hidden" name="base64" value="">
+                           </form>
+                       </li>
+                        <li>
+                           <form method="POST">
+                               <div class="attached-icon">
+                                   <input type="submit" name="download_faktura" value="Senaste fakturan" class="download-list-link">
+                               </div>
+                               <input type="hidden" name="base64" value="">
+                           </form>
+                       </li>
+                        <li>
+                           <form method="POST">
+                               <div class="attached-icon">
+                                   <input type="submit" name="download_faktura" value="Senaste fakturan" class="download-list-link">
+                               </div>
+                               <input type="hidden" name="base64" value="">
+                           </form>
+                       </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        <section class="real-estate-blocks parallax have-background">
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Parallax</h1>
+                <h2 class="stylegudie-headline">Exempel</h2>
+                <h4>(section: section.parallax klass: .parallax-hover)</h4>
+                <div class="m-real-estat-block parallax-hover">
+                    <a href="#" class="inner have-background">
+                        <div class="parallax-image-box puff-size">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                        </div>
+                        <div class="textarea">
+                            <h3 class="ockra">Prästgatan 13 </h3>
+                            <h4>Södermalm</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Bilder</h1>
+                <h2 class="stylegudie-headline">Collage</h2>
+
+                <!-- Style: width 50% in just for the stylegudie - skip this otherwise -->
+                 <ul class="o-image-collage image-gallery-lightbox flex-parent" style="width: 50%;">            
+                    <li>
+                        <figure class="image slideLightbox1" style="background-image: url(images/Blecktornsgrand-MagnusFond.jpg)">
+                            <img src="images/Blecktornsgrand-MagnusFond.jpg">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="image slideLightbox2" style="background-image: url(images/Djurgard.fondochfond.jpg)">
+                            <img src="images/Djurgard.fondochfond.jpg">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="image slideLightbox3" style="background-image: url(images/familj-MagnusFond.jpg)">
+                            <img src="images/familj-MagnusFond.jpg">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="image slideLightbox4" style="background-image: url(images/fondochfondhornsgatan.jpg">
+                            <img src="images/fondochfondhornsgatan.jpg">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="image slideLightbox5" style="background-image: url(images/Tapeterlokal.fondochfond.jpg">
+                            <img src="images/Tapeterlokal.fondochfond.jpg">
+                        </figure>
+                    </li>
+                    <li>
+                         <figure class="image slideLightbox6" style="background-image: url(images/trapuppgang.jpg">
+                            <img src="images/trapuppgang.jpg">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="image slideLightboxLightbox7" style="background-image: url(images/Good-for-wp/Par.fondochfond.jpg">
+                            <img src="images/Good-for-wp/Par.fondochfond.jpg">
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="section-inner">
+                <h1 class="stylegudie-headline">Collage image gallery</h1>
+                <h2 class="stylegudie-headline">REQUIER wa-mediabox CSS and JS</h2>
+
+                <div class="o-image-collage">
+                    <ul class="flex-parent parent-collage">
+                        <!-- One picture --> 
+                            <!-- <a> The class is SAME for every a-link -->
+                            <!-- data-mediabox should be default -->
+                            <!-- DYNAMIC: href and the data-title, is it possible to add this in Wordpress? -->
+                        <li>
+                            <a class="single-image-collage" data-mediabox="real-estat-collage-gallery" href="images/Blecktornsgrand-MagnusFond.jpg" data-title="">
+                                <figure class="image" style="background-image: url(images/Blecktornsgrand-MagnusFond.jpg)">
+                                    <img src="images/Blecktornsgrand-MagnusFond.jpg">
+                                </figure>
+                            </a>
+                        </li>
+                        <!-- END -->
+                        <li>
+                            <a class="single-image-collage" data-mediabox="real-estat-collage-gallery" href="images/Blecktornsgrand-MagnusFond.jpg" data-title="">
+                                <figure class="image" style="background-image: url(images/Blecktornsgrand-MagnusFond.jpg)">
+                                    <img src="images/Blecktornsgrand-MagnusFond.jpg">
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-image-collage" data-mediabox="real-estat-collage-gallery" href="images/Blecktornsgrand-MagnusFond.jpg" data-title="">
+                                <figure class="image" style="background-image: url(images/Blecktornsgrand-MagnusFond.jpg)">
+                                    <img src="images/Blecktornsgrand-MagnusFond.jpg">
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-image-collage" data-mediabox="real-estat-collage-gallery" href="images/Blecktornsgrand-MagnusFond.jpg" data-title="">
+                                <figure class="image" style="background-image: url(images/Blecktornsgrand-MagnusFond.jpg)">
+                                    <img src="images/Blecktornsgrand-MagnusFond.jpg">
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-image-collage" data-mediabox="real-estat-collage-gallery" href="images/Blecktornsgrand-MagnusFond.jpg" data-title="">
+                                <figure class="image" style="background-image: url(images/Blecktornsgrand-MagnusFond.jpg)">
+                                    <img src="images/Blecktornsgrand-MagnusFond.jpg">
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-image-collage" data-mediabox="real-estat-collage-gallery" href="images/Blecktornsgrand-MagnusFond.jpg" data-title="">
+                                <figure class="image" style="background-image: url(images/Blecktornsgrand-MagnusFond.jpg)">
+                                    <img src="images/Blecktornsgrand-MagnusFond.jpg">
+                                </figure>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div><!-- END ImageCollage -->
+            </div>
+        
+        </section>
+    </main>
+    <!-- Mediabox -->
+    <script src="js/wa-mediabox.min.js" type="text/javascript"></script>
+    
+    <!-- Javascript -->
+    <script src="js/form-validation.js" type="text/javascript"></script>
+    <script src="js/form-select.js" type="text/javascript"></script>
+    <script src="js/form-inputfile.js" type="text/javascript"></script>
+    <script src="js/image-gallery.js" type="text/javascript"></script>
+    <script src="js/foldout-list.js" type="text/javascript"></script>
+    <script src="js/sort.js" type="text/javascript"></script>
+    <script src="js/toggle-foldout-content.js" type="text/javascript"></script>
+    <script src="js/fadeout-textarea.js" type="text/javascript"></script>
+    <script src="js/addressBlockReadMore.js" type="text/javascript"></script>
+</body>  
+</html>

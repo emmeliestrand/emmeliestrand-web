@@ -1,0 +1,49 @@
+.o-image-collage {
+    align-content: stretch;
+    .parent-collage {
+        padding-left: 0;
+        padding-right: $base;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        > li {
+            list-style: none;
+            figure.image {
+                margin: 0;
+                filter: grayscale(100%);
+            }
+            
+        }
+    }
+    // li {
+    //     width: 100%;
+    //     line-height: 0;
+    //     flex-grow: 1;
+    //     display: flex;
+    //     > a {
+    //         display: flex;
+    //         justify-content: space-around;
+    //         &:after {
+    //             content: inherit;
+    //         }
+    //         .image {
+    //             margin: 0;
+    //         }
+    //     }
+    // }
+}
+
+/*-------------------------------------------
+      -----    Media query     -----   
+------------------------------------------- */
+@media (min-width: $tablet) { 
+    .o-image-collage {    
+        li { 
+            
+        }
+    }
+
+}
+@media (min-width: $desktop) { 
+
+}

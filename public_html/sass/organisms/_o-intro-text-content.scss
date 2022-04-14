@@ -1,0 +1,41 @@
+.o-intro-text-content {
+    position: relative;
+    overflow: hidden;
+    > figure {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        &:after {
+            content: "";
+            background-color: $white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.95;
+        }
+    }
+}
+
+@media (min-width: $tablet) { 
+    .o-intro-text-content {
+        .section-inner {
+            max-width: 600px + $base * 6;
+            margin: 0 auto;
+        }
+    }
+}
+@media (min-width: $desktop) {
+
+}
+@media (min-width: $desktop-hd) { 
+
+}

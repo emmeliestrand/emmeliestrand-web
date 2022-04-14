@@ -1,0 +1,100 @@
+.o-article {
+    border-right: 1px solid $black;
+    img {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    // --- GENERAL
+    .content-type {
+        padding-right: $base;
+    }
+    .content-type + .content-type {
+        margin-top: $base * 4;
+    }
+    .content-wrapper {
+        margin-left: $base * 3;
+    }
+    .image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        img {
+            opacity: 0;
+            overflow: hidden;
+        }
+    }
+    // --- TYPE A
+    .content-type-a {
+        .img-wrapper {
+            max-width: 60%;
+        }
+    }
+}
+
+@media (min-width: $tablet) { 
+    .o-article {
+        max-width: 600px;
+        margin: 0 auto;
+        .content-type {
+            padding-right: $base;
+        }
+        // --- TYPE A
+        .content-type-a { 
+            h2 {
+                max-width: 70%;
+            }
+            .content-wrapper {
+                display: flex;
+                margin-top: $base * 2;
+                //margin-left: $base * 4;
+                > div {
+                    width: 50%;
+                    &.text-wrapper {
+                        margin-left: $base * 3;
+                        p:first-of-type {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        // --- TYPE B
+        .content-type-b {
+            .content-wrapper {
+                //margin-left: $base * 4;
+                .text-wrapper {
+                    max-width: 50%;
+                    margin-right: $base * 3;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $desktop) {
+    .o-article {
+        .content-type-a { 
+            .subheadline {
+                margin-left: -$base * 3;
+            }
+            h2 {
+                max-width: 100%;
+                margin-left: -$base * 3;
+            }
+            .content-wrapper {
+                margin: 0;
+                margin-top: $base * 3;
+                > div {
+                    &.text-wrapper {
+                        margin-top: $base * 3;
+                    } 
+                }
+            }
+        }
+    }
+    
+
+}
+@media (min-width: $desktop-hd) { 
+    
+
+}

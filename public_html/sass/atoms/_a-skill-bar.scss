@@ -1,0 +1,45 @@
+.a-skill-bar {
+    background-color: $black;
+    height: 10px;
+    max-width: 40%;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    .bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $primary-color;
+        border-radius: 10px;
+        &.bar-95 {
+            right: 5%;
+        }
+        &.bar-90 {
+            right: 10%;
+        }
+        &.bar-80 {
+            right: 20%;
+        }
+        &.bar-70 {
+            right: 30%;
+        }
+        &.bar-60 {
+            right: 40%;
+        }
+        &.bar-50 {
+            right: 50%;
+        }
+        &.bar-40 {
+            right: 60%;
+        }
+        &.bar-30 {
+            right: 70%;
+        }
+    }
+    & + .skill-title {
+        padding-left: $base;
+    }
+}

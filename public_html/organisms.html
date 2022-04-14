@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadsholmen - Atomic design LookBook</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;1,800&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- SCSS SMACC and Atomic Design system -->
+    <link href="public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+     <section class="hero" style="padding: 100px 0">
+            <div class="section-inner">
+                <h5 class="center">Atomic design system</h5>
+                <h1 class="have-underlined-bottom center">Digital StyleGudie</h1>
+                <h2 class="center">Molecules for Stadsholmen</h2>
+            </div>
+            <div class="stylegudie-header">
+                <h4>Links around the digital stylegudie</h4>
+                <ul>
+                    <li>
+                        <a href="atoms.html">Atoms</a>
+                    </li>
+                    <li>
+                        <a href="molecules.html">Molecules</a>
+                    </li>
+                    <li class="active">
+                        <a href="organisms.html">Organisms</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="o-cookie-banner" id="cookie-banner">
+            <div class="section-inner">
+                <p class="smaller cookie-text">Denna site använder cookies. <a href="#">Läs mer.</a></p>
+                <a href="#" class="cta-link cookie-accept-btn">Acceptera Cookies</a>
+<!--
+                <div class="button secondary-button xsmall-btn">
+                    <div class="button-inner">
+                        <a href="#">Acceptera</a>
+                    </div>
+                </div>
+-->
+            </div>
+        </section>
+    <header>
+        <div class="header-inner">
+            <div class="button primary-button xsmall-btn ockra">
+                <div class="button-inner">
+                    <a href="#">Gör felanmälan</a>
+                </div>
+            </div>
+            <div class="search">
+                <input class="search-input" type="text" />
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="page_item page-item-5 page_item_has_children"><a href="http://stadsholmen.dev/new-page/">Lokaler</a></li>
+                    <li class="page_item page-item-13"><a href="http://stadsholmen.dev/child/">Fastigheter</a></li>
+                    <li class="page_item page-item-2 page_item_has_children"><a href="http://stadsholmen.dev/sample-page/">Hyresgäster</a></li>
+                    <li class="header-logotype">
+                        <a href="#">
+                            <figure class="logotype"></figure>
+                        </a>
+                    </li>
+                    <li class="page_item page-item-22 current_page_item"><a href="http://stadsholmen.dev/stadsholmen/">Stadsholmen</a></li>
+                    <li class="page_item page-item-24"><a href="http://stadsholmen.dev/kontakt/">Kontakt</a></li>
+                    <li class="search-navigation page_item page-item-26"><a href="http://stadsholmen.dev/search/">Sök</a></li>
+                </ul>
+            </div>
+            <div class="button menu-button primary-button xsmall-btn ockra">
+                <div class="button-inner">
+                    <a href="#">Logga in</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobil-inner">
+            <div class="button primary-button xsmall-btn ockra">
+                <div class="button-inner">
+                    <a href="#">Gör felanmälan</a>
+                </div>
+            </div>
+             <div class="search">
+                <input class="search-input" type="text" />
+            </div>
+            <div class="menu">
+                <div class="click-to-open-menu"></div>
+                <ul>
+                    <li class="page_top">
+                         <div class="header-logotype">
+                            <a href="#">
+                                <figure class="logotype"></figure>
+                            </a>
+                        </div>
+                        <div class="header-close-menu"></div>
+                    </li>
+                    <li class="page_item page-item-1">
+                        <a href="#">Lokaler</a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="#">Fastigheter</a>
+                    </li>
+                    
+                    <li class="page_item page-item-3 page_item_has_children current_page_item">
+                        <a href="#">Hyresgäster</a>
+                        <ul class='children'>
+                            <li class="page_item page-item-301 page_item_has_children">
+                                <a href="#">
+                                    Bostad
+                                </a>
+                                <ul class='children'>
+                                    <li class="page_item page-item-301-1">
+                                        <a href="#">
+                                            Kontrakt och byten
+                                        </a>
+                                    </li>
+                                    <li class="page_item page-item-301-2">
+                                        <a href="#">
+                                            Att beteela hyra
+                                        </a>
+                                    </li>
+                                    <li class="page_item page-item-301-3">
+                                        <a href="#">
+                                            Värme och centilation
+                                        </a>
+                                    </li>
+                                    <li class="page_item page-item-301-4">
+                                        <a href="#">
+                                            Ansvar och trivsel
+                                        </a>
+                                    </li>
+                                    <li class="page_item page-item-301-5">
+                                        <a href="#">
+                                            Underhåll och tillval
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="page_item page-item-302">
+                                <a href="#">
+                                    Lokal
+                                </a>
+                            </li>
+                            <li class="page_item page-item-303">
+                                <a href="#">
+                                    Blanketter
+                                </a>
+                            </li>
+                            <li class="page_item page-item-304">
+                                <a href="#">
+                                    Frågor och Svar
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="page_item page-item-4 page_item_has_children">
+                        <a href="http://stadsholmen.dev/sample-page/">Stadsholmen</a>
+                        <ul class='children'>
+                            <li class="page_item page-item-401"><a href="http://stadsholmen.dev/new-page/grandchild/">Fredrik har ordet</a></li>
+                            <li class="page_item page-item-402"><a href="http://stadsholmen.dev/new-page/grandchild/">Uppdrag</a></li>
+                            <li class="page_item page-item-403">
+                                <a href="http://stadsholmen.dev/new-page/grandchild/">Historia</a>
+                            
+                            </li>
+                            <li class="page_item page-item-404"><a href="http://stadsholmen.dev/new-page/grandchild/">Förvaltning</a></li>
+                            <li class="page_item page-item-405"><a href="http://stadsholmen.dev/new-page/grandchild/">Kulturpris</a></li>
+                            <li class="page_item page-item-406"><a href="http://stadsholmen.dev/new-page/grandchild/">Tidning</a></li>
+                            <li class="page_item page-item-407"><a href="http://stadsholmen.dev/new-page/grandchild/">Organisation och styrelse</a></li>
+                            <li class="page_item page-item-408"><a href="http://stadsholmen.dev/new-page/grandchild/">Nyheter</a></li>
+                            <li class="page_item page-item-409"><a href="http://stadsholmen.dev/new-page/grandchild/">Press</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="page_item page-item-5">
+                        <a href="http://stadsholmen.dev/child/">Kontakt</a>
+                    </li>
+                    
+                    <li class="page_item page-item-6 last_item">
+                        <div class="lable">Mina sidor</div>
+                        <div class="button menu-button primary-button xsmall-btn ockra right person-icon">
+                            <div class="button-inner">
+                                <a href="#">Logga in</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+<!--        START ORGANISM HERO - FOR STARTPAGE WITH CLASS BIG -->
+        <section class="o-hero big have-sub-header">
+<!--            have-sub-header is to make the sub-header in the bottom to stay in the right place -->
+            <div class="section-inner">
+<!--                Molecule for headline, ingress and button -->
+                <div class="m-headline-ingress-button">
+                    <h1 class="center have-underlined-bottom">Vi är Stockholms själ</h1>
+                    <p class="ingress center">Stadsholmen är ett fastighetsbolag i Stockholm. Vi förvaltar historiska hus med en levande historia, allt från enkla träkåkar och gårdar till palats från 1700- och 1800-tavar. Det finns många fastighetsbolag men bara ett Stadsholmen.</p>
+                    <div class="button primary-button center big-btn ockra arrow-icon">
+                        <div class="button-inner">
+                            <a href="#">Våra fastigheter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            Place the background image in this element -->
+            <div class="have-background-img white-overlay" style="background-image: url(images/trapuppgang.jpg)"></div>
+            <div class="sub-header h5 bottom right">"Fastighterna är vår själ"</div>
+        </section>
+        <!-- END -->
+        
+        
+        <section class="o-real-estat">
+            <div class="section-inner have-rope left">
+                <h2>Våra fastigheter</h2>
+                <div class="real-estate-blocks parallax">
+                    <div class="flex-parent">
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                 <div class="button secondary-button big-btn white-bg arrow-icon">
+                    <div class="button-inner">
+                        <a href="#">Alla fastigheter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="o-news have-background texture">
+            <div class="section-inner have-rope right">
+                <h2>Nyheter</h2>
+                <div class="flex-parent">
+                    <div class="m-news-puff">
+                         <div class="inner have-background">
+                            <h4>Stadsholmen</h4>
+                            <h3>Öppet hus i helgen 6-8 oktober</h3>
+                            <p>(Saloon) (Three old men are sitting at a table in the saloon talking amongst themselves.) Take a look at what just breezed in the door. Why I didn't know the circus was in town! Looks like he got that shirt off'n a dead Chinee. (Saloon) (Three old men are sitting at a table in the saloon talking amongst themselves.) Take a look at what just breezed in the door. Why I didn't know the circus was in town! Looks like he got that shirt off'n a dead Chinee.</p>
+                            <a href="#" class="cta-link">Läs hela nyheten</a>
+                        </div>
+                    </div>
+                    <div class="m-news-puff">
+                         <div class="inner have-background">
+                            <h4>Stadsholmen</h4>
+                            <h3>Öppet hus i helgen 6-8 oktober</h3>
+                            <p>(Saloon) (Three old men are sitting at a table in the saloon talking amongst themselves.) Take a look at what just breezed in the door. Why I didn't know the circus was in town! Looks like he got that shirt off'n a dead Chinee.</p>
+                            <a href="#" class="cta-link">Läs hela nyheten</a>
+                        </div>
+                    </div>
+                    <div class="m-news-puff">
+                        <div class="inner have-background">
+                            <h4>Stadsholmen</h4>
+                            <h3>Öppet hus i helgen 6-8 oktober</h3>
+                            <p>(Saloon) (Three old men are sitting at a table in the saloon talking amongst themselves.) Take a look at what just breezed in the door. Why I didn't know the circus was in town! Looks like he got that shirt off'n a dead Chinee.</p>
+                            <a href="#" class="cta-link">Läs hela nyheten</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button secondary-button big-btn grey-bg arrow-icon right">
+                    <div class="button-inner">
+                        <a href="#">Se alla nyheter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="o-about">
+            <div class="section-inner big slimmer have-rope left bottom">
+                <div class="m-headline-ingress-button">
+                    <h5 class="h5 center have-underlined-bottom">Om stadsholmen</h5>
+                    <h2 class="center">Vi bevarar karaktär, charm och stil</h2>
+                    <p class="ingress center">Stadsholmens kulturpolitiska uppdrag är att äga, rusta och förvalta hus med kulturhistoriskt värde i Stockholm. Vi har ett stort ansvar gentemot alla som bor, besöker och verkar i Stockholm. Ett ansvar att bevara husens karaktär, charm och stil. Totalt förvaltar vi 278 fastigheter, 1 631 bostadslägenheter och 805 lokaler. </p>
+                    <div class="button secondary-button center big-btn arrow-icon">
+                        <div class="button-inner">
+                            <a href="#">Våra fastigheter</a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <section class="o-premises-listing have-background">
+            <div class="section-inner">
+                <ul class="premises-list">
+                    <li class="m-premises-list-item">
+                        <div class="image-box">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                        </div>
+                        <div class="textarea">
+                            <h2>Södermälarstrand 12, Södermalm</h2>
+                            <h4>Södermalm</h4>
+                            <p class="smaller">Whoa, they really cred with your parent's first meeting. They don't meet, they don't fall in love, they won't get married and they wont have kids.</p>
+                            <p class="smaller">(to himself) Mission accomplished. (Street) (w.t) That means Jennifer's OK and Einie's OK, right? (DeLorean) (w.t) That's right Marty! It's the ripple effect, the future is back. Now var's go home!</p>
+                        </div>
+                        <div class="aside">
+                            <h3>Fakta:</h3>
+                            <ul class="data-list">
+                                <li>Typ av lokal: Kontor</li>
+                                <li>Tillträde: Enligt överenskommelse</li>
+                                <li>Kallhyra: 45 000 kr/mån</li>
+                            </ul>
+                            <a href="#" class="cta-link">Läs mer om lokalen</a>
+                        </div>
+                    </li>
+                    <li class="m-premises-list-item">
+                       <div class="image-box">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                        </div>
+                        <div class="textarea">
+                            <h2>Södermälarstrand 12, Södermalm</h2>
+                            <h4>Södermalm</h4>
+                            <p class="smaller">Whoa, they really cle remember, interfered with your parent's first meeting. They don't meet, they don't fall in love, they won't get married and they wont have kids.</p>
+                            <p class="smaller">(to himself) Mission accomplished. (Street) (w.t) That means Jennifer's OK and Einie's OK, right? (DeLorean) (w.t) That's right Marty! It's the ripple effect, the future is back. Now var's go home!</p>
+                        </div>
+                        <div class="aside">
+                            <h3>Fakta:</h3>
+                            <ul class="data-list">
+                                <li>Typ av lokal: Kontor</li>
+                                <li>Tillträde: Enligt överenskommelse</li>
+                                <li>Kallhyra: 45 000 kr/mån</li>
+                            </ul>
+                            <a href="#" class="cta-link">Läs mer om lokalen</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="o-entry-list have-background texture">
+            <div class="section-inner">
+                <ul class="entry-list flex-parent">
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/Djurgard.fondochfond.jpg)">
+                                <img src="images/Djurgard.fondochfond.jpg">
+                            </figure>
+                            <h2>Bostad</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/familj-MagnusFond.jpg)">
+                                <img src="images/familj-MagnusFond.jpg">
+                            </figure>
+                            <h2>Lokal</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                <img src="images/trapuppgang.jpg">
+                            </figure>
+                            <h2>Logga in</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/Gardmmikael.fondochfond.jpg)">
+                                <img src="images/Gardmmikael.fondochfond.jpg">
+                            </figure>
+                            <h2>Underhåll</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/Tapeterlokal.fondochfond.jpg)">
+                                <img src="images/Tapeterlokal.fondochfond.jpg">
+                            </figure>
+                            <h2>Felanmälan</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                    <li class="m-entry-list-item">
+                        <a href="#">
+                            <figure class="image" style="background-image: url(images/familj-MagnusFond.jpg)">
+                                <img src="images/familj-MagnusFond.jpg">
+                            </figure>
+                            <h2>Frågor och Svar</h2>
+                            <p class="ingress">(w.t) Where's the book? (v.o) I dunno, Biff must still have it with him, all I have is the cover. (Strickland’s Office) (v.o) But where's Biff? (Outside, Biff has confronted George.)</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="o-real-estat">
+            <div class="section-inner">
+                <h2>Våra fastigheter</h2>
+                <div class="real-estate-blocks parallax">
+                    <div class="flex-parent">
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                       <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-real-estat-block parallax-hover">
+                            <a href="#" class="inner have-background">
+                                <div class="parallax-image-box puff-size">
+                                    <figure class="image" style="background-image: url(images/trapuppgang.jpg)">
+                                        <img src="images/trapuppgang.jpg">
+                                    </figure>
+                                </div>
+                                <div class="textarea">
+                                    <h3 class="ockra">Prästgatan 13 </h3>
+                                    <h4>Södermalm</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="o-textblock-list have-background">
+            <div class="section-inner">
+                 <ul class="textblock-list flex-parent">
+                    <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <h2>Kundcenter</h2>
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                            <ul class="business-hours">
+                                <li>Måndag: 08:00-17:00 (16:30 juni-aug)</li>
+                                <li>Tisdag-tordag 08:00-15:30</li>
+                                <li>Fredag: 08:00-12:00</li>
+                            </ul>
+                        </div>
+                    </li>
+                     <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <h2>Fastighetsjour</h2>
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                     <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <h2>Störningsjour</h2>
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="o-textblock-list">
+            <div class="section-inner">
+                <h2>Stadsholmen</h2>
+                 <ul class="textblock-list flex-parent">
+                    <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                            <ul class="business-hours">
+                                <li>Måndag: 08:00-17:00 (16:30 juni-aug)</li>
+                                <li>Tisdag-tordag 08:00-15:30</li>
+                                <li>Fredag: 08:00-12:00</li>
+                            </ul>
+                        </div>
+                    </li>
+                     <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                     <li class="m-textblock-list-item">
+                        <div class="textarea">
+                            <p class="small">
+                             Emmett! Clara! (She shrugs and shouts above the din.) I love you. (into walkie-talkie) Doc, Doc! What's happening?
+                            </p>
+                            <p class="small bold">
+                                <a href="#">
+                                    T: 08-580 365 50
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="o-banner have-background bg-image" style="background-image: url(images/trapuppgang.jpg)">
+            <div class="section-inner big">
+                <div class="m-headline-ingress-button">
+                    <h5 class="center have-underlined-bottom">Fastighet</h5>
+                    <h1 class="center">Södermalmstrand 21</h1>
+                    <h2 class="h1 center">Södermalm</h2>
+                    <h5 class="center">Kontor, 125 kvm</h5>
+                </div>
+            </div>
+        </section>
+        
+         <section class="o-banner have-background bg-image" style="background-image: url(images/trapuppgang.jpg)">
+            <div class="section-inner big">
+                <div class="m-headline-ingress-button">
+                    <h5 class="center have-underlined-bottom">Våra lediga lokaler</h5>
+                    <h1 class="center">Södermalmstrand 21</h1>
+                    <h2 class="h1 center">Södermalm</h2>
+                    <h5 class="center">Kontor, 125 kvm</h5>
+                    
+                    <div class="button primary-button big-btn download-icon center">
+                        <div class="button-inner">
+                            <a href="#">Ladda ner faktablad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="third-size">
+            <div class="aside-inner">
+                <ul class="o-foldout-list">
+                    <li>
+                        <h3>Kontaktperson</h3>
+                        <div class="foldout-content m-contact-person">
+                            <figure class="image circle" style="background-image: url(images/avatar.png)">
+                                <img src="images/avatar.png">
+                            </figure>
+                            <div class="textarea">
+                                <div class="name-text">Anna Andersson</div>
+                                <div class="title-text">Lokaluthyrare</div>
+                                <div class="contact-info">
+                                    <p class="phone">T: <a href="#">08-123 34 34</a></p>
+                                    <p class="email">E: <a href="#">anna.a@stadsholmen.se</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Intresseanmälan</h3>
+                        <div class="foldout-content m-form">
+                            <form method="POST" action="" name="form-interest" novalidate>
+                                <input type="text" name="firstname" id="form-interest-firstname" class="validate" placeholder="Förnamn: " required>
+                                <input type="text" name="lastname" id="form-interest-lastname" class="validate" placeholder="Efternamn: " required>
+                                <input type="text" name="company" id="form-interest-company" class="validate" placeholder="Företag: " required>
+                                <input type="number" name="phone" id="form-interest-phone" class="validate" placeholder="Telefon: " required>
+                                <input type="email" name="email" id="form-interest-email" class="validate" placeholder="Email: " required>
+                                <input type="number" name="org" id="form-interest-org" class="validate" placeholder="Organisationsnummer: " required>
+                                <input type="text" name="msg" id="form-interest-msg" class="validate" placeholder="Meddelande (frivilligt): ">
+                                <span class="input-cta arrow-icon small"> 
+                                    <input type="submit" name="submit" id="form-interest-submit">
+                                </span> 
+                                <label for="submit" class="form-interest-gdpr"><a href="#" class="gdpr-text">Hur kommer mina uppgifter hanteras?</a></label>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Fakta</h3>
+                        <div class="two-column-table foldout-content">
+                            <div class="row">
+                                <div class="column-one">
+                                    Stadsdel
+                                </div>
+                                <div class="column-two">
+                                    <ul>
+                                        <li>Södermalm</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column-one">
+                                    Gatuadress
+                                </div>
+                                <div class="column-two">
+                                    <ul>
+                                        <li>Tegelviksgatan 42</li>
+                                        <li>Tegelviksgatan 42A-B</li>
+                                        <li>Tegelviksgatan 42</li>
+                                        <li>Tegelviksgatan 42</li>
+                                        <li>Tegelviksgatan 42</li>
+                                        <li>Tegelviksgatan 42</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column-one">
+                                    Ägarförhållande
+                                </div>
+                                <div class="column-two">
+                                    <ul>
+                                        <li>Ägande</li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="column-one">
+                                    Byggår
+                                </div>
+                                <div class="column-two">
+                                    <ul>
+                                        <li>1600</li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="column-one">
+                                    Antal lägenheter
+                                </div>
+                                <div class="column-two">
+                                    <ul>
+                                        <li>1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="column-one">
+                                    Varav 5+ rum
+                                </div>
+                                <div class="column-two">
+                                    <ul>
+                                        <li>1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="column-one">
+                                    Total lägenhetsyta
+                                </div>
+                                <div class="column-two">
+                                    <ul>
+                                        <li>290 kvm</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Dokument</h3>
+                        <div class="foldout-content m-download-list">
+                            <ul class="download-list">
+                                <li>
+                                    <a href="#" class="download-list-link document-icon">Dokumentsnamn.pdf</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="download-list-link document-icon">Dokumentsnamn.pdf</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="download-list-link document-icon">Dokumentsnamn.pdf</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Relaterade länkar</h3>
+                        <div class="foldout-content m-download-list">
+                            <ul class="download-list">
+                                <li>
+                                    <a href="#" class="download-list-link attached-icon">Dokumentsnamn.pdf</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="download-list-link attached-icon">Dokumentsnamn.pdf</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="download-list-link attached-icon">Dokumentsnamn.pdf</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="o-form-report">
+            <form>
+                <div class="have-background texture form-container">
+                    <div class="section-inner">
+                         <div class="m-speech-balloon">
+                            <div class="textarea">
+                                <p>Logga in för att hämta och fylla i dina uppgifter</p>
+                                <div class="button secondary-button xsmall-btn">
+                                    <div class="button-inner">
+                                        <a href="#">Logga in</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <span class="form-group">
+                                <label for="notifier">Anmälare:</label>
+                                <input type="text" name="notifier" id="form-report-notifier" class="validate" required>
+                            </span>
+                            <span class="form-group">
+                                <label for="email">E-postadress:</label>
+                                <input type="email" name="email" id="form-report-email" class="validate" required>
+                            </span>
+                            <span class="form-group">
+                                <label for="phone">Telefon (mobil):</label>
+                                <input type="number" name="phone" id="form-report-phone" class="validate" required>
+                            </span>
+                            <span class="form-group">
+                                <label for="address">Vilken adress gäller ditt ärende?</label>
+                                <input type="text" name="address" id="form-report-address" class="validate" required>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-inner form">
+                    <div class="full-width-group">
+                        <label for="message">Vad gäller ditt ärende?</label>
+                        <div class="styled-select">
+                            <select name="message" id="form-template-message">
+                                <option value="none" selected>Välj</option>
+                                <option value="bostad">Bostaden</option>
+                                <option value="errormsg">Felanmälan</option>
+                                <option value="rent">Uppsägning av avtal</option>
+                            </select>
+                        </div>
+                        <label for="message">Beskriv ditt ärende så utförligt som möjligt:</label>
+                        <textarea rows="5" name="message" id="form-template-message-2" required></textarea>
+
+                        <div class="bottom-section">
+                            <div class="left">
+                                <label for="message">Bifoga fil (valfri):</label>
+                                <label for="file" class="file-label">
+                                Bifoga fil: (valfri)</label>
+                                <input type="file" class="file-input"name="file" id="form-template-file">
+                            </div>
+                            <div class="right">
+                                <span class="input-cta arrow-icon"> 
+                                    <input type="submit" name="submit" id="form-template-submit">
+                                </span> 
+                                <label for="submit" class="form-template-gdpr"><a href="#" class="gdpr-text">Hur kommer mina uppgifter hanteras?</a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="o-filter have-background">
+            <div class="section-inner small">
+                <h2>Våra fastigheter</h2>
+                <div class="filter filter-select real-estate-filter">
+<!--                    First select element    -->
+                    <div class="select">
+                        <div class="styled-select">
+                            <select class="select-part-one">
+                                <option value="all">Alla områden</option>
+                                <option value="skarholmen">Skärholmen</option>
+                                <option value="sodermalm">Södermalm</option>
+                                <option value="gamlastan">Gamla stan</option>
+                            </select>
+                        </div>
+                    </div>
+<!--                    Second select element   -->
+                    <div class="select">
+                        <div class="styled-select">
+                            <select class="select-part-two">
+                                <option>Gatuadress</option>
+                                <option value="skarholmen">Skärholmsvägen 13</option>
+                                <option value="skarholmen">Skärholmsvägen 14A</option>
+                                <option value="skarholmen">Skärholmsvägen 14C</option>
+                                <option value="sodermalm">Fatburen 12</option>
+                                <option value="skarholmen">Skärholmsvägen 17A-B</option>
+                                <option value="skarholmen">Skärholmsvägen 19</option>
+                                <option value="sodermalm">Fatburen 17</option>
+                                <option value="gamlastan">Västerlånggatan 13</option>
+                                <option value="sodermalm">Södra Mälarstrand 14</option>
+                                <option value="gamlastan">Västerlånggatan 93</option>
+                                <option value="gamlastan">Västerlånggatan 130</option>
+                            </select>
+                        </div>
+                    </div>
+                   <div class="button primary-button xsmall-btn">
+                        <div class="button-inner">
+                            <a href="#" class="show-on-map" id="mapFastigheter">Visa på karta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sort sort-list-view">
+                    <figure class="list-icon icon is-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="50" height="50" viewBox="0 0 25 25">
+                            <path class='icon-color' d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                    </figure>
+                    <figure class="module-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="50" height="50" viewBox="0 -0.5 25 25">
+                            <path class='icon-color' d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="o-tab-content">
+            <div class="section-inner">
+                <div class="tab-container content1">
+                    <div class="tab-container-inner">
+                        <h2 class="headline-background">Logga in</h2>
+                        <div class="tab-navbar">
+                            <a href="#" class="tab-button tab-button1 content1">
+                                <div class="tab-button-inner">
+                                    Mobilt BankID
+                                </div>
+                            </a>
+                            <a href="#" class="tab-button tab-button2 content2">
+                                <div class="tab-button-inner">
+                                    Avtalsnummer
+                                </div>
+                            </a>
+                        </div>
+                        <ul>
+                            <li class="tab-content tab-content1 content1">
+                                <div class="tab-content-inner">
+                                    <div class="tab-content-introtext">
+                                        <h3>Mobilt BankID</h3>
+                                        <p>För att logga in behöver du en mobiltelefon eller surfplatta med BankID säkerhetsapp.</p>
+                                        <h3>Avtalsnummer</h3>
+                                        <p>Klicka på fliken Avtalsnummer om du istälvar vill logga in med avtalsnummer/personnummer och pinkod.</p>
+                                    </div>
+                                    <div class="button secondary-button small-btn center disabled">
+                                        <div class="button-inner">
+                                            <a href="#">Använd BankID</a>
+                                        </div>
+                                    </div>
+                                    <div class="foldout-container">
+                                        <a href="#">Hjälp med att logga in</a>
+                                        <div class="foldout-content">
+                                            Great Scott! (He faints.) Doc. C'mon. (Doc's House) (Marty drives Doc home in the rain following the lightening strike. He hangs up the varter from the Doc in 1885 by the fireplace to dry.)
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="tab-content tab-content2 content2">
+                                <div class="tab-content-inner">
+                                    <div class="tab-content-introtext">
+                                        <h3>Avtalsnummer</h3>
+                                        <p>Vänligen fyll i ditt/ert avtalsnummer och pinkod.</p>
+                                    </div>
+                                    <form>
+                                        <input type="number" placeholder="Avtalsnummer">
+                                        <input type="password" placeholder="Pinkod">
+                                        <span class="input-cta small-btn center"> 
+                                            <input type="submit" name="submit" id="form-template-submit-1" value="Logga in">
+                                        </span> 
+                                    </form>
+                                    <a href="#" class="linktext">Hämta pinkod</a>
+                                    <div class="foldout-container">
+                                        <a href="#">Hjälp med att logga in</a>
+                                        <div class="foldout-content">
+                                            Great Scott! (He faints.) Doc. C'mon. (Doc's House) (Marty drives Doc home in the rain following the lightening strike. He hangs up the varter from the Doc in 1885 by the fireplace to dry.)
+                                            Great Scott! (He faints.) Doc. C'mon. (Doc's House) (Marty drives Doc home in the rain following the lightening strike. He hangs up the varter from the Doc in 1885 by the fireplace to dry.)
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="o-search-input have-background texture">
+            <div class="section-inner">
+                 <form class="" method="GET" novalidate="">
+                    <span class="form-group">
+                        <label for="s">Sök:</label>
+                        <input type="text" name="s" value="">
+                    </span>
+                    <div class="bottom-section">
+                        <span class="input-cta  xsmall-btn ockra"> 
+                            <input type="submit" class="" value="Sök">
+                        </span> 
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="o-contact-persons">
+            <div class="section-inner flex-parent">
+                <div class="m-contact-person">
+                    <figure class="image circle" style="background-image: url(images/avatar.png)">
+                        <img src="images/avatar.png">
+                    </figure>
+                    <div class="textarea">
+                        <div class="name-text">Anna Andersson</div>
+                        <div class="title-text">Lokaluthyrare</div>
+                        <div class="contact-info">
+                            <p class="phone">T: <a href="#">08-123 34 34</a></p>
+                            <p class="email">E: <a href="#">anna.andersson@stadsholmen.se</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-contact-person">
+                    <figure class="image circle" style="background-image: url(images/avatar.png)">
+                        <img src="images/avatar.png">
+                    </figure>
+                    <div class="textarea">
+                        <div class="name-text">Anna Andersson</div>
+                        <div class="title-text">Lokaluthyrare</div>
+                        <div class="contact-info">
+                            <p class="phone">T: <a href="#">08-123 34 34</a></p>
+                            <p class="email">E: <a href="#">anna.andersson@stadsholmen.se</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-contact-person">
+                    <figure class="image circle" style="background-image: url(images/avatar.png)">
+                        <img src="images/avatar.png">
+                    </figure>
+                    <div class="textarea">
+                        <div class="name-text">Anna Andersson</div>
+                        <div class="title-text">Lokaluthyrare</div>
+                        <div class="contact-info">
+                            <p class="phone">T: <a href="#">08-123 34 34</a></p>
+                            <p class="email">E: <a href="#">anna.andersson@stadsholmen.se</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-contact-person">
+                    <figure class="image circle" style="background-image: url(images/avatar.png)">
+                        <img src="images/avatar.png">
+                    </figure>
+                    <div class="textarea">
+                        <div class="name-text">Anna Andersson</div>
+                        <div class="title-text">Lokaluthyrare</div>
+                        <div class="contact-info">
+                            <p class="phone">T: <a href="#">08-123 34 34</a></p>
+                            <p class="email">E: <a href="#">anna.andersson@stadsholmen.se</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map-section o-popup-content have-background texture">
+            <div class="section-inner">
+                <div class="popup-close-btn">Stäng</div>
+                <div id="map">
+                    Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+
+                    Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+
+                    Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
+
+                    Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.
+
+                    Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
+
+                    Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jícama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach.
+
+                    Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula.
+
+                    Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. Jícama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato.
+                </div>
+                
+                
+            </div>
+        </section>
+        <section class="have-background texture">
+            <div class="section-inner">
+                <div class="button primary-button center big-btn ockra arrow-icon">
+                    <div class="button-inner">
+                        <a href="#" class="show-popup-btn">Visa Alla fastigheter på karta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<!--
+         <div class="o-info-popup">
+            <div class="inner">
+                <a href="sida-med-ändra-uppgifter" class="close-popup">Stäng</a>
+                <div class="text">
+                    <h3>Vi saknar uppgifter</h3>
+                    <p>Vi ser att du ännu inte fyllt i din email. Vänligen fyll i dina uppgifter <a href="#">här</a>.</p>
+
+                    <h5>Varför vill ni veta detta?</h5>
+                    <p>Vi tycker det är viktigt att viktiga information når dig - därför kommuncerar vi gärna med dig via de kanaler som du dagligen använder. Med andra ord kommer vi inte skicka reklam eller annan irriterande information, utan enbart ärende som gäller dig och ditt boende.</p>
+                </div>
+            </div>
+        </div>
+-->
+    </main>
+        <footer class="">
+        <div class="section-inner">
+            <ul class="footer-columns flex-parent">
+                <li class="footer-navigation-list">
+                    <h3>Navigation</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">
+                                Lokaler
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Fastigheter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Hyresgäster
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Stadsholmen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kontakt
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Logga in
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-logotype">
+                    <figure class="logotype"></figure>
+                </li>
+                <li class="footer-contact">
+                    <h3>Kontakt</h3>
+                    <ul class="link-list">
+                        <li><a href="#">Gör felanmälan</a></li>
+                    </ul>
+                    <div class="textarea">
+                        <p>Felanmälan: <span class="phone">08-508 365 50</span></p>
+                        <p>Fastighetsjour (kväll & helg): <span class="phone">08-508 365 50</span></p>
+                        <p>Störningsjour (kväll & helg): <span class="phone">08-508 365 50</span></p>
+                    </div>
+                </li>
+                <li class="footer-illustration">
+                    <img class="footer-illustration-img"src="images/Illustration/stadsholmen_illustration_transparent_smooth_once.gif">
+                </li>
+            </ul>
+            <p class="footer-bottom-text smaller"><span>Stadsholmen AB</span><span> Besöksadress: Söder Mälarstrand 21 / Bellmansgatan 2</span><span> Postadress: Box 17246, 104 62 Stockholm</span></p>
+        </div>
+    </footer>
+    
+    <footer class="">
+        <div class="section-inner">
+            <ul class="footer-columns flex-parent">
+                <li class="footer-logotype">
+                    <figure class="logotype"></figure>
+                </li>
+                <li class="footer-navigation-list">
+                    <h3>Navigation</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">
+                                Lokaler
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Fastigheter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Hyresgäster
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Stadsholmen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kontakt
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Logga in
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-contact">
+                    <h3>Kontakt</h3>
+                    <ul class="link-list">
+                        <li><a href="#">Gör felanmälan</a></li>
+                    </ul>
+                    <div class="textarea">
+                        <p>Felanmälan: <span class="phone">08-508 365 50</span></p>
+                        <p>Fastighetsjour (kväll & helg): <span class="phone">08-508 365 50</span></p>
+                        <p>Störningsjour (kväll & helg): <span class="phone">08-508 365 50</span></p>
+                    </div>
+                </li>
+                <li class="footer-illustration">
+                    <img class="footer-illustration-img"src="images/Illustration/stadsholmen_illustration_transparent_smooth_once.gif">
+                </li>
+            </ul>
+            <p class="footer-bottom-text smaller"><span>Stadsholmen AB</span><span> Besöksadress: Söder Mälarstrand 21 / Bellmansgatan 2</span><span> Postadress: Box 17246, 104 62 Stockholm</span></p>
+        </div>
+    </footer>
+    <footer class="small-footer">
+        <div class="section-inner">
+            <ul class="footer-columns flex-parent">
+                <li class="footer-logotype">
+                    <figure class="logotype"></figure>
+                </li>
+                <li class="footer-navigation-list">
+                    <h3>Navigation</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">
+                                Lokaler
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Fastigheter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Hyresgäster
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Stadsholmen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kontakt
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Logga in
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-contact">
+                    <h3>Kontakt</h3>
+                    <ul class="link-list">
+                        <li><a href="#">Gör felanmälan</a></li>
+                    </ul>
+                    <div class="textarea">
+                        <p>Felanmälan: <span class="phone">08-508 365 50</span></p>
+                        <p>Fastighetsjour (kväll & helg): <span class="phone">08-508 365 50</span></p>
+                        <p>Störningsjour (kväll & helg): <span class="phone">08-508 365 50</span></p>
+                    </div>
+                </li>
+                <li class="footer-illustration">
+                    <img class="footer-illustration-img"src="images/Illustration/stadsholmen_illustration_transparent_smooth_once.gif">
+                </li>
+            </ul>
+            <p class="footer-bottom-text smaller"><span>Stadsholmen AB</span><span> Besöksadress: Söder Mälarstrand 21 / Bellmansgatan 2</span><span> Postadress: Box 17246, 104 62 Stockholm</span></p>
+        </div>
+    </footer>
+    
+    <!-- Javascript -->
+    <script src="js/form-validation.js" type="text/javascript"></script>
+    <script src="js/form-select.js" type="text/javascript"></script>
+    <script src="js/form-inputfile.js" type="text/javascript"></script>
+    <script src="js/image-gallery.js" type="text/javascript"></script>
+    <script src="js/foldout-list.js" type="text/javascript"></script>
+    <script src="js/sort.js" type="text/javascript"></script>
+    <script src="js/header.js" type="text/javascript"></script>
+    <script src="js/animate-illustration.js" type="text/javascript"></script>
+    <script src="js/tab-content.js" type="text/javascript"></script>
+    <script src="js/cookie-banner.js" type="text/javascript"></script>
+    <script src="js/makeDivClickable.js" type="text/javascript"></script>
+    <script src="js/info-popup.js" type="text/javascript"></script>
+    <script src="js/showPopup.js" type="text/javascript"></script>
+</body>  
+</html>

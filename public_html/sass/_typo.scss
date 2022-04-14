@@ -1,0 +1,355 @@
+/*----------------------------------------------------
+
+      TYPO
+
+--------------------------------------------------- */
+
+body {
+    font-family: 'Raleway', Arial, san-serif;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, .ingress, .subheadline {
+    &.center {
+        text-align: center;
+    }
+    margin-bottom: $base;
+    word-break: break-word;
+    color: $black;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+    font-family: 'Playfair Display', serif;
+    hyphens: auto;
+}
+h1,
+.h1 {
+    font-size: 4em;
+    line-height: 1em;
+    font-style: italic;
+    font-weight: 900;
+    color: $black;
+    & + div,
+    & + p {
+        margin-top: $base * 2;
+    }
+}
+h2,
+.h2 {
+    font-size: 3em;
+    line-height: 1em;
+    font-style: italic;
+    word-break: break-word;
+}
+.section-inner > h2 {
+    margin-top: 0;
+}
+h2 + p,
+.h2 + p {
+    margin-top: $base * 2;
+}
+h3,
+.h3 {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-weight: 700;
+}
+h4,
+.h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Raleway';
+}
+h5,
+.h5 {
+    font-size: 0.8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    font-family: 'Raleway';
+}
+h5 + h2 {
+    margin-top: $base * 4;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    span {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+    &.bold {
+        font-weight: 500;
+    }
+}
+strong {
+    font-weight: 700;
+}
+div.smaller,
+p.smaller,
+small {
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-grey;
+    font-style: italic;
+
+}
+p + p {
+    margin-top: $base * 0.5;
+}
+p.ingress,
+div.ingress p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 300;
+    letter-spacing: inherit;
+    &.bold {
+        font-weight: 500;
+    }
+}
+div.ingress {
+    p + p {
+        margin-top: $base;
+    }
+}
+.name-text {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 1.1em;
+}
+.title-text {
+    font-size: 1em;
+}
+
+/* the parent section have to have class have-sub-header */
+.sub-header {
+    position: absolute;
+    margin-bottom: 0;
+    &.bottom {
+       bottom: -$base / 2; 
+    }
+    &.right {
+        right: $base;
+    }
+    &.top {
+        top: 0; 
+    }
+    &.center {
+        left: 50%;
+    }
+}
+/*-------------------------------------------
+      -----    Form and Inputs   -----   
+------------------------------------------- */
+form input {
+    font-size: 0.9em;
+}
+select {
+    font-size: 0.9em;
+}
+textarea {
+    font-size: 0.9em;
+}
+/*-------------------------------------------
+      -----    Colors headlines    -----   
+------------------------------------------- */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, p {
+    &.primary-color {
+        color: $primary-color;
+    }
+    &.primary-color-dark {
+        color: $primary-color-dark;
+    }
+    &.primary-color-light {
+        color: $primary-color-light;
+    }
+    &.secondary-color {
+        color: $secondary-color;
+    }
+    &.secondary-color-dark {
+        color: $secondary-color-dark;
+    }
+    &.secondary-color-light {
+        color: $secondary-color-light;
+    }
+    &.dark-grey {
+        color: $dark-grey;
+    }
+    &.white {
+        color: $white;
+    }
+    &.black {
+        color: $black;
+    }
+    &.light-grey {
+        color: $light-grey;
+    }
+    &.medium-grey {
+        color: $medium-grey;
+    }
+    &.error-color {
+        color: $error-color-dark;
+    }
+}
+/*-------------------------------------------
+      -----    Buttons/Links size    -----   
+------------------------------------------- */
+a,
+p > a,
+p a,
+strong a {
+    color: $dark-grey;
+    text-decoration: none;
+    font-family: "Raleway", arial, sans-serif;
+    font-weight: 700;
+    transition: all ease-in 200ms;
+    word-break: break-word;
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: "";
+        background-color: $dark-grey;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        transition: all ease-in 200ms;
+    }
+    &:hover {
+        text-decoration: none;
+        color: $black;
+        &:after {
+            background-color: $primary-color-light;
+            height: 20px;
+            z-index: -1;
+        }
+    }
+    p,
+    div {
+       font-family: "Raleway", arial, sans-serif;
+        font-weight: 300; 
+    }
+}
+a.cta-link {
+    font-size: 0.8em;
+}
+
+/*-------------------------------------------
+      -----    Lists    -----   
+------------------------------------------- */
+
+ul,
+ol {
+    &.bullet-list,
+    &.number-list {
+        li {
+            line-height: 1.4em;
+            a {
+                color: $primary-color-dark;
+                font-weight: 600;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    li {
+        line-height: 1.4em;
+    }
+    &.data-list {
+        li {
+            font-size: 0.9em;
+        }
+    }
+}
+.link-list {
+    li a {
+        color: $black;
+        line-height: 2em;
+        transition: all 100ms ease-in-out;
+        text-decoration: underline;
+        font-weight: 300;
+        font-family: "Raleway", arial, sans-serif;
+    }
+    li:hover a {
+        color: $primary-color-dark;
+    }
+}
+/*-------------------------------------------
+      -----    General rules    -----   
+------------------------------------------- */
+.contact-info {
+    .phone,
+    .email {
+        font-size: 1em;
+        a {
+            font-size: 1em;
+        }
+    }
+}
+.phone,
+.email {
+    display: inline-block;
+    margin: 0;
+}
+.phone + .email {
+    display: block;
+}
+.email {
+    word-break: keep-all;
+}
+
+@media (min-width: $tablet) { 
+    h1,
+    .h1 {
+        font-size: 5em;
+    }
+    h2,
+    .h2 {
+        font-size: 3em;
+    }
+}
+@media (min-width: $desktop) { 
+    h1,
+    .h1 {
+        font-size: 5em;
+    }
+    h2,
+    .h2 {
+        font-size: 3em;
+        line-height: 1em;
+    }
+}
+/*-------------------------------------------
+      -----    Media query     -----   
+------------------------------------------- */
+@media (min-width: $tablet) { 
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, .ingress, .subheadline {
+        &.padding-left {
+            padding-left: $base * 2;
+        }
+    }
+}
+@media (min-width: $desktop) {
+
+}
+@media (min-width: $desktop-hd) { 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

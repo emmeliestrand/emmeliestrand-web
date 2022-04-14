@@ -1,0 +1,81 @@
+/*----------------------------------------------------
+
+      Links - atoms 
+
+--------------------------------------------------- */
+a {
+    &:focus {
+        outline-color: $primary-color;
+        outline-offset: 5px;
+    }
+}
+/*-------------------------------------------
+      -----    CTA link style     -----   
+------------------------------------------- */
+.cta-link-wrapper {
+    text-align: center;
+    margin: $base * 2 0;
+}
+div.cta-link,
+a.cta-link,
+.cta-link {
+    color: $dark-grey;
+    text-decoration: none;
+    font-family: "Raleway", arial, sans-serif;
+    font-weight: 700;
+    transition: all ease-in 200ms;
+    word-break: break-word;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    &:after {
+        content: "";
+        background-color: $dark-grey;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        transition: all ease-in 200ms;
+    }
+    &:hover {
+        text-decoration: none;
+        color: $black;
+        &:after {
+            background-color: $primary-color-light;
+            height: 20px;
+            z-index: -1;
+        }
+    }
+    &.center {
+        text-align: center;
+    }
+}
+
+/*-------------------------------------------
+      -----    <label> GDPR    -----   
+------------------------------------------- */
+.gdpr-text,
+.linktext {
+    font-size: 1em;
+    text-decoration: none;
+    color: $primary-color-dark;
+    padding-top: $base * 2;
+    line-height: 1.5em;
+    font-family: "OpenSansBook", Arial, sans-serif;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/*-------------------------------------------
+      -----    Media query     -----   
+------------------------------------------- */
+@media (min-width: $tablet) {
+   
+}
+@media (min-width: $desktop) { 
+   
+}
