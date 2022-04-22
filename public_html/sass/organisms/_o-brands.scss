@@ -1,16 +1,22 @@
 .o-brands {
-    .logo-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    img {
-        filter: grayscale(100%);
-        margin: 10px;
-        max-width: 90px;
-    }
-    .toblack {
-        filter: invert(100%);
-    }
+  &.grey-bg {
+    background-color: $offwhite;
+  }
+  .section-inner {
+    max-width: 1024px;
+  }
+  .logo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    filter: grayscale(100%);
+    margin: 10px;
+    max-width: 90px;
+  }
+  .toblack {
+    filter: invert(100%);
+  }
 }

@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio site for Emmelie Strand | Emmelie Strand</title>
+    <title>Portfolio cases | UX, UI, Illustrations & Code | Emmelie Strand</title>
     <meta name="description"
-        content="A digital collection of Portfolio cases, Personal information About me and Contact information.">
-    <!-- META DATA FOR SHARING -->
-    <meta property="og:title" content="Portfolio site for Emmelie Strand | Emmelie Strand">
-    <meta property="og:image" content="https://www.emmeliestrand.se/images/emmelie-strand-portrait.jpg">
-    <meta property="og:description"
-        content="A digital collection of Portfolio cases, Personal information About me and Contact information.">
-    <meta property="og:url" content="https://www.emmeliestrand.se/">
+        content="In this Portfolio I've collected some of my favorites cases I've worked with, from UX-projects to Illustrations and code.">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4HP5GRREZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P4HP5GRREZ');
+    </script>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -22,12 +27,11 @@
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#82d7d0">
     <meta name="msapplication-TileColor" content="#82d7d0">
     <meta name="theme-color" content="#82d7d0">
-
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
-    <!-- SCSS and Atomic Design system -->
-    <link href="public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!-- SCSS SMACC and Atomic Design system -->
+    <link href="./public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -42,12 +46,14 @@
                     </li>
                     <li class="menu-wrapper">
                         <nav>
+                            <a class="active" href="./portfolio.html">Portfolio</a>
                             <a href="./about.html">About me</a>
                             <a href="./contact.html">Contact</a>
                         </nav>
                     </li>
                     <li class="menu-wrapper-mobil">
                         <nav>
+                            <a class="active" href="./portfolio.html">Portfolio</a>
                             <a href="./about.html">About me</a>
                             <a href="./contact.html">Contact</a>
                         </nav>
@@ -57,50 +63,21 @@
         </div>
     </header>
     <main>
-        <section class="o-hero">
-            <div class="section-inner no-bottom-padding">
-                <ul>
-                    <li class="text-side">
-                        <div class="inner">
-                            <div class="subheadline">
-                                My world is made of
-                            </div>
-                            <h1>Design & Code</h1>
-                            <div class="padded-wrapper">
-                                <div class="inner">
-                                    <div>
-                                        <p class="ingress">
-                                            Some call me an Unicorn*, others call me an Ux & Ui designer, Frontend
-                                            developer, Business Strategist, Creator, Consult, Project manager, Creative
-                                            Director, Illustrator or Art director.
-                                        </p>
-                                        <div class="buttons-wrapper">
-                                            <div class="button primary-button">
-                                                <div class="button-inner">
-                                                    <a target="_blank" href="https://form.typeform.com/to/YAVVJSho"
-                                                        rel="noopener">Contact me →</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <small>*A Unicorn developer/designer is a person who can design and code (source: <a
-                                            href="https://medium.com/@harivigneshjayapalan/life-of-a-unicorn-developer-d442b6655399"
-                                            target="_blank" rel="noopener">medium.com →</a>)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="img-side">
-                        <div class="inner top" style="background-image: url(./images/gro/_G5A8402-web.jpg);">
-                            <img src="./images/gro/_G5A8402-web.jpg" alt="Coding girl sitting and working" />
-                        </div>
-                    </li>
-                </ul>
+        <section class="o-intro-text-content">
+            <figure style="background-image: url(./images/portfolio-background.jpg)"></figure>
+            <div class="section-inner">
+                <div class="subheadline">
+                    Welcome to my world
+                </div>
+                <h1>Portfolio</h1>
+                <p class="ingress">I've collected some of my favorites cases I've worked with. These projects and
+                    clients have a special place in my heart and include challenges that represent my experience and
+                    passion.</p>
             </div>
         </section>
         <section>
             <div class="section-inner">
-                <h2 class="center">Some of my projects</h2>
+                <h2>Some of my projects</h2>
                 <div class="m-grid-portfolio">
                     <ul class="container">
                         <li>
@@ -167,13 +144,79 @@
                                 </div>
                             </a>
                         </li>
+                        <!-- <li>
+                            <a href="./portfolio/bring.html">
+                                <div class="inner">
+                                    <div class="inner-border">
+                                        <div class="text-content">
+                                            <h3>Nacka kommun</h3>
+                                            <p>UX and UI designer. Re-design of "Jämföraren".</p>
+                                            <div class="link">Read about the Nacka kommun case</div>
+                                        </div>
+                                        <figure>
+                                            <div class="image-wrapper"
+                                                style="background-image: url(images/case/nackakommun/nackakommun-jämföraren.jpg)">
+                                                <img src="images/case/nackakommun/nackakommun-jämföraren.jpg" />
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./portfolio/bring.html">
+                                <div class="inner">
+                                    <div class="inner-border">
+                                        <div class="text-content">
+                                            <h3>Porsche carerra cup</h3>
+                                            <p>UX/UI designer and Frontend developer. Porsche Carrera Cup new site.
+                                            </p>
+                                            <div class="link">Read about the Prosche Carerrera Cup case</div>
+                                        </div>
+                                        <figure>
+                                            <div class="image-wrapper"
+                                                style="background-image: url(images/case/bring-karta-utfalld.jpg)">
+                                                <img src="images/case/bring-karta-utfalld.jpg" />
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </a>
+                        </li> -->
                     </ul>
                 </div>
             </div>
         </section>
+        <!-- <section>
+            <div class="section-inner">
+                <h2 class="center">Highlights from my Portfolio</h2>
+                <div class="m-grid-portfolio">
+                    <div class="container">
+                        <div class="item item-a">
+                            <img src="images/case/bring-karta-utfalld.jpg" />
+                        </div>
+                        <div class="item item-b">
+                            <img src="images/case/examensarbet.jpg" />
+                        </div>
+                        <div class="item item-c">
+                            <img src="images/case/JKPGLM-a.jpg" />
+                        </div>
+                        <div class="item item-d">
+                            <img src="images/case/svarta-plagg-c.jpg" />
+                        </div>
+                        <div class="item item-e">
+                            <img src="images/case/Stadsholmen-d.jpg" />
+                        </div>
+                        <div class="item item-f">
+                            <img src="images/case/Stadsholmen-b.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
         <section class="o-brands">
-            <div class="section-inner no-top-padding">
-                <h3 class="center">Brands I've worked with</h3>
+            <div class="section-inner">
+                <h2 class="center">Brands I've worked with</h2>
                 <div class="logo-wrapper">
                     <img src="./images/logotypes/astrazeneca.png" />
                     <img src="./images/logotypes/bring.svg" />
@@ -195,54 +238,11 @@
                 </div>
             </div>
         </section>
-        <section class="o-teaser-content">
-            <div class="section-inner">
-                <ul>
-                    <li class="left-side">
-                        <div class="inner">
-                            <div class="subheadline">
-                                Passion and lifestyle
-                            </div>
-                            <h2>Hello Girl!</h2>
-                            <div class="padded-wrapper">
-                                <div class="inner">
-                                    <div>
-                                        <p class="ingress">
-                                            I am a feminist, and works towards getting more women into tech. The network
-                                            Hello Girl! has a two days workshop in web development to show women that
-                                            programming is creative and fun.
-                                        </p>
-                                    </div>
-                                    <div class="cta-link-wrapper">
-                                        <a class="cta-link" href="./portfolio/hello-girl.html">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="middle-side">
-                        <div class="image-wrapper with-color" style="background-image: url(./images/hellogirl.jpg)">
-                            <img src="./images/hellogirl.jpg" alt="Picture from Hello Girl! event" />
-                        </div>
-                    </li>
-                    <li class="right-side">
-                        <div class="inner padded-wrapper">
-                            <div class="text-wrapper">
-                                <p><a href="https://www.hellogirl.se/" target="_blank" rel="noopener">Hello Girl!</a> is
-                                    a coding network for girls and women. The purpose of the network is to inspire,
-                                    share knowledge and exchange experience about how it’s like to work with tech.
-                                    Eventually this will increase gender equality in the technical field.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
     </main>
     <footer>
         <div>
             <div class="logotype">
-                <img src="./images/emmeliestrand-hori-logotype-white.svg" alt="white logotype">
+                <img src="./images/emmeliestrand-hori-logotype-white.svg" alt="white version emmelie strand logotype">
             </div>
             <div>
                 Stockholm, Sweden
