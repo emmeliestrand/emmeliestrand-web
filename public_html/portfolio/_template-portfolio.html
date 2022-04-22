@@ -6,7 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bring | Portfolio Case | Emmelie Strand</title>
   <meta name="description" content="Portfolio case for Bring, a home delivery web app.">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4HP5GRREZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-P4HP5GRREZ');
+  </script>
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -19,7 +27,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
-  <!-- SCSS and Atomic Design system -->
+  <!-- SCSS SMACC and Atomic Design system -->
   <link href="../public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
@@ -35,12 +43,14 @@
           </li>
           <li class="menu-wrapper">
             <nav>
+              <a class="active" href="../portfolio.html">Portfolio</a>
               <a href="../about.html">About me</a>
               <a href="../contact.html">Contact</a>
             </nav>
           </li>
           <li class="menu-wrapper-mobil">
             <nav>
+              <a class="active" href="../portfolio.html">Portfolio</a>
               <a href="../about.html">About me</a>
               <a href="../contact.html">Contact</a>
             </nav>
@@ -67,9 +77,9 @@
       </div>
     </section>
     <section class="text-content">
-      <div class="section-inner no-top-padding no-bottom-padding">
+      <div class="section-inner no-top-padding">
         <article class="o-article">
-          <div class="content-type content-type-two-columns">
+          <div class="content-type content-type-vertical-image">
             <div class="subheadline">user-centred</div>
             <h2>Concept & Wireframes</h2>
             <div class="content-wrapper">
@@ -114,21 +124,24 @@
               </div>
             </div>
           </div>
-          <div class="content-type content-type-hastags">
+          <div class="content-type content-type-two-columns">
+            <div class="subheadline">Simple & Playful</div>
+            <h2>Mockups & Design</h2>
             <div class="content-wrapper">
-              <h3>TOOLS/TECHNIQUE/METHODS</h3>
-              <ul class="hastags-wrapper">
-                <li>HiFi-Wireframes</li>
-                <li>Figma (design tool)</li>
-                <li>Atomic Design (method)</li>
-                <li>Design system and Components</li>
-                <li>CSS/SASS</li>
-                <li>HTML</li>
-                <li>User-centered design</li>
-                <li>Vanilla JS</li>
-                <li>Coded Prototype (HTML/CSS/JS)</li>
-                <li>UX Research</li>
-              </ul>
+              <div class="img-wrapper image"
+                style="background-image: url(../images/case/bring/mobile-mockup-design.png);">
+                <img src="../images/case/bring/mobile-mockup-design.png" alt="Bring mockup" />
+              </div>
+              <div class="text-wrapper">
+                <p>Emmelie and a small team developed the concept, new design, a coded prototype and new
+                  tonality in the
+                  communication between Bring and the consumer.
+                </p>
+                <p>Bring's new home delivery meets the high demands that are set. It's easy to adjust the date and time
+                  when life changes, add extra services and information. When the delivery is on its way, it is easy to
+                  follow packages in real-time and be ready to receive packages. As simple as possible with a playful
+                  design.</p>
+              </div>
             </div>
           </div>
         </article>
