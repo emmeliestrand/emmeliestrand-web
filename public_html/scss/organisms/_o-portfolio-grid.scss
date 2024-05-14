@@ -1,0 +1,75 @@
+.o-portfolio-grid {
+    margin-top: $base * 2;
+    .card-wrapper {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .card + .card {
+        margin-top: $base;
+    }
+    .card {
+        background-color: #FFF;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: relative;
+        transition: all ease-in-out 200ms;
+    }
+    .image-frame {
+        overflow: hidden;
+    }
+    .image-wrapper {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        margin: 0;
+        position: relative;
+        filter: grayscale(100%);
+        transition: all ease-in-out 200ms;
+        height: 100%;
+        img {
+            opacity: 0;
+            max-width: 100%;
+        }
+    }
+    .card:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .image-wrapper {
+            filter: grayscale(0);
+            transform: scale(1.01);
+        }
+    }
+    .text-content {
+        padding: $base $base $base * 2 $base;
+    }
+    .card a {
+        position: static;
+    }
+    .card a::after {
+        position: static;
+    }
+    .card a::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+}
+@media (min-width: $desktop) { 
+    .o-portfolio-grid { 
+        .card-wrapper {
+            display: grid;
+            grid-template-columns: calc(50% - $base) calc(50% - $base);
+            column-gap: $base * 2;
+            row-gap: $base * 2;
+        }
+        .card + .card {
+            margin-top: 0;
+        }
+        .text-content {
+            padding: $base * 2 $base * 2 $base * 4 $base * 2;
+        }
+    }
+
+}

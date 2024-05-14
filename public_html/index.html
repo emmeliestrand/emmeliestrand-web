@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +12,6 @@
     <meta property="og:description"
         content="A digital collection of Portfolio cases, Personal information About me and Contact information.">
     <meta property="og:url" content="https://www.emmeliestrand.se/">
-
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -22,39 +19,33 @@
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#82d7d0">
     <meta name="msapplication-TileColor" content="#82d7d0">
     <meta name="theme-color" content="#82d7d0">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <!-- SCSS and Atomic Design system -->
     <link href="public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header>
-        <div class="inner">
-            <div class="m-top-navigation">
-                <ul>
-                    <li class="logotype">
-                        <a href="index.html">
-                            <img src="./images/emmeliestrand-hori-logotype.svg" alt="logotype" />
-                        </a>
-                    </li>
-                    <li class="menu-wrapper">
-                        <nav>
-                            <a href="./about.html">About me</a>
-                            <a href="./contact.html">Contact</a>
-                        </nav>
-                    </li>
-                    <li class="menu-wrapper-mobil">
-                        <nav>
-                            <a href="./about.html">About me</a>
-                            <a href="./contact.html">Contact</a>
-                        </nav>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <nav>
+            <ul class="logotype">
+                <li>
+                    <a href="index.html">
+                        <img src="./images/emmeliestrand-hori-logotype.svg"
+                            alt="logotype of an illustration of a pencil and emmelie strand written" />
+                    </a>
+                </li>
+            </ul>
+            <label for="menu" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input id="menu" type="checkbox">
+            <ul class="menu">
+                <li><a href="./index.html" class="current-page">Start</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./about.html">About me</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="o-hero">
@@ -74,6 +65,16 @@
                                             developer, Business Strategist, Creator, Consult, Project manager, Creative
                                             Director, Illustrator or Art director.
                                         </p>
+                                        <ul class="m-tags">
+                                            <li class="tag">UX Research</li>
+                                            <li class="tag">Usability testing</li>
+                                            <li class="tag">UX Design</li>
+                                            <li class="tag">UI Design</li>
+                                            <li class="tag">Branding</li>
+                                            <li class="tag">Design System</li>
+                                            <li class="tag">Front-end Development</li>
+                                            <li class="tag">Digital Accessability</li>
+                                        </ul>
                                         <div class="buttons-wrapper">
                                             <div class="button primary-button">
                                                 <div class="button-inner">
@@ -83,7 +84,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <small>*A Unicorn developer/designer is a person who can design and code (source: <a
+                                    <small>*A Unicorn developer/designer is a person who can design and code
+                                        <br>(source: <a
                                             href="https://medium.com/@harivigneshjayapalan/life-of-a-unicorn-developer-d442b6655399"
                                             target="_blank" rel="noopener">medium.com →</a>)</small>
                                 </div>
@@ -91,108 +93,12 @@
                         </div>
                     </li>
                     <li class="img-side">
-                        <div class="inner top" style="background-image: url(./images/gro/_G5A8402-web.jpg);">
-                            <img src="./images/gro/_G5A8402-web.jpg" alt="Coding girl sitting and working" />
+                        <div class="image-wrapper inner top"
+                            style="background-image: url(./images/gro/_G5A8402-web.jpg);">
+                            <img src="./images/gro/_G5A8402-web.jpg" alt="Emmelie is sitting and smiling" />
                         </div>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <section>
-            <div class="section-inner">
-                <h2 class="center">Some of my projects</h2>
-                <div class="m-grid-portfolio">
-                    <ul class="container">
-                        <li>
-                            <a href="./portfolio/bring.html">
-                                <div class="inner">
-                                    <div class="inner-border">
-                                        <div class="text-content">
-                                            <h3>Bring</h3>
-                                            <p>Bring launched a new digital
-                                                service: Home delivery. My role: Consultant, UX designer and Front-end
-                                                developer. </p>
-                                            <div class="link">The Bring case</div>
-                                        </div>
-                                        <figure>
-                                            <div class="image-wrapper"
-                                                style="background-image: url(images/case/bring/bring-map.jpg)">
-                                                <img src="images/case/bring/bring-map.jpg" />
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./portfolio/stadsholmen.html">
-                                <div class="inner">
-                                    <div class="inner-border">
-                                        <div class="text-content">
-                                            <h3>Stadsholmen</h3>
-                                            <p>Stadsholmens new external site (part of Svenska Bostäder) and a
-                                                updated
-                                                digital style. My role: Consultant, UX/UI Designer,
-                                                Front-end developer and Project manager.</p>
-                                            <div class="link">The Stadsholmen case</div>
-                                        </div>
-                                        <figure>
-                                            <div class="image-wrapper"
-                                                style="background-image: url(images/case/stadsholmen/stadsholmen-moodboard.jpg)">
-                                                <img src="images/case/stadsholmen/stadsholmen-moodboard.jpg" />
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./portfolio/populum.html">
-                                <div class="inner">
-                                    <div class="inner-border">
-                                        <div class="text-content">
-                                            <h3>Populum</h3>
-                                            <p>Head of Design, UX/UI designer and Frontend developer. Create, develop
-                                                and maintain UX and UI design and components for Populums digital
-                                                services and Populums brand and marketing. </p>
-                                            <div class="link">Populum</div>
-                                        </div>
-                                        <figure>
-                                            <div class="image-wrapper"
-                                                style="background-image: url(images/case/populum/populum-starpage.jpg)">
-                                                <img src="images/case/populum/populum-starpage.jpg" />
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="o-brands">
-            <div class="section-inner no-top-padding">
-                <h3 class="center">Brands I've worked with</h3>
-                <div class="logo-wrapper">
-                    <img src="./images/logotypes/astrazeneca.png" />
-                    <img src="./images/logotypes/bring.svg" />
-                    <img src="./images/logotypes/BUFAB.png" />
-                    <img src="./images/logotypes/carnegie.svg" />
-                    <img src="./images/logotypes/forsvarsmakten.svg" />
-                    <img src="./images/logotypes/fortifikationsverket.png" />
-                    <img class="toblack" src="./images/logotypes/FLH.png" />
-                    <img class="toblack" src="./images/logotypes/itab.svg" />
-                    <img src="./images/logotypes/jlindeberg.svg" />
-                    <img src="./images/logotypes/nackakommun.svg" />
-                    <img class="toblack" src="./images/logotypes/populum.svg" />
-                    <img src="./images/logotypes/porsche.png" />
-                    <img src="./images/logotypes/regionstockholm.svg" />
-                    <img src="./images/logotypes/stadsholmen.svg" />
-                    <img src="./images/logotypes/statensmaritimamuseer.svg" />
-                    <img src="./images/logotypes/svenskabostader.svg" />
-                    <img src="./images/logotypes/upphandlingmyndigheten.svg" />
-                </div>
             </div>
         </section>
         <section class="o-teaser-content">
@@ -207,14 +113,17 @@
                             <div class="padded-wrapper">
                                 <div class="inner">
                                     <div>
-                                        <p class="ingress">
-                                            I am a feminist, and works towards getting more women into tech. The network
-                                            Hello Girl! has a two days workshop in web development to show women that
-                                            programming is creative and fun.
-                                        </p>
+                                        <div class="text-wrapper">
+                                            <p class="ingress"><a href="https://www.hellogirl.se/" target="_blank" rel="noopener">Hello Girl!</a> is
+                                                a coding network for girls and women. The purpose of the network is to inspire,
+                                                share knowledge and exchange experience about how it’s like to work with tech.
+                                                Eventually this will increase gender equality in the technical field.</p>
+                                        </div>
+                                       
                                     </div>
                                     <div class="cta-link-wrapper">
-                                        <a class="cta-link" href="./portfolio/hello-girl.html">Read more</a>
+                                        <a class="cta-link" href="www.hellogirl.se" target="_blank" rel="noopener">To
+                                            Hellogirl.com →</a>
                                     </div>
                                 </div>
                             </div>
@@ -222,16 +131,23 @@
                     </li>
                     <li class="middle-side">
                         <div class="image-wrapper with-color" style="background-image: url(./images/hellogirl.jpg)">
-                            <img src="./images/hellogirl.jpg" alt="Picture from Hello Girl! event" />
+                            <img src="./images/hellogirl.jpg" alt="A big group of girls and women" />
                         </div>
                     </li>
                     <li class="right-side">
                         <div class="inner padded-wrapper">
                             <div class="text-wrapper">
-                                <p><a href="https://www.hellogirl.se/" target="_blank" rel="noopener">Hello Girl!</a> is
-                                    a coding network for girls and women. The purpose of the network is to inspire,
-                                    share knowledge and exchange experience about how it’s like to work with tech.
-                                    Eventually this will increase gender equality in the technical field.</p>
+                                <p>
+                                    As a feminist, I am dedicated to increasing female representation in the
+                                    tech industry. Through our network, Hello Girl!, we are organizing a two-day
+                                    beginner workshop in web development (HTML, CSS, and JS) to demonstrate to
+                                    women that programming is not only creative and fun but also accessible.
+                                    </p>
+                                    <p>
+                                    All of our instructors are women currently working in the industry, serving
+                                    not only as teachers but also as role models, inspiring and empowering the
+                                    next generation of female tech professionals.
+                                </p>
                             </div>
                         </div>
                     </li>

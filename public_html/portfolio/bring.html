@@ -1,154 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bring | Portfolio Case | Emmelie Strand</title>
-  <meta name="description" content="Portfolio case for Bring, a home delivery web app.">
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-  <link rel="manifest" href="../site.webmanifest">
-  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#82d7d0">
-  <meta name="msapplication-TileColor" content="#82d7d0">
-  <meta name="theme-color" content="#82d7d0">
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <!-- SCSS and Atomic Design system -->
-  <link href="../public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bring | Portfolio Case | Emmelie Strand</title>
+	<meta name="description" content="Portfolio case for Bring, a home delivery web app.">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+	<link rel="manifest" href="../site.webmanifest">
+	<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#82d7d0">
+	<meta name="msapplication-TileColor" content="#82d7d0">
+	<meta name="theme-color" content="#82d7d0">
+	<link href="../public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <header>
-    <div class="inner">
-      <div class="m-top-navigation">
-        <ul>
-          <li class="logotype">
-            <a href="../index.html">
-              <img src="../images/emmeliestrand-hori-logotype.svg" alt="logotype" />
-            </a>
-          </li>
-          <li class="menu-wrapper">
-            <nav>
-              <a href="../about.html">About me</a>
-              <a href="../contact.html">Contact</a>
-            </nav>
-          </li>
-          <li class="menu-wrapper-mobil">
-            <nav>
-              <a href="../about.html">About me</a>
-              <a href="../contact.html">Contact</a>
-            </nav>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="o-intro-text-content grey-bg">
-      <figure style="background-image: url(../images/case/bring-thumbnail.jpg)"></figure>
-      <div class="section-inner">
-        <div class="subheadline">
-          Bring launched a new digital service: Home delivery
-        </div>
-        <h1>Bring</h1>
-        <p class="ingress">The Bring Group had an idea of creating a service for home delivery of lighter
-          packages. The client (the package receiver) would be able to follow the
-          delivery's entire journey - from the online store to the door - in real-time on
-          his/her smartphone.</p>
-        <small>
-          Industry: Logistic
-        </small>
-      </div>
-    </section>
-    <section class="text-content">
-      <div class="section-inner no-top-padding no-bottom-padding">
-        <article class="o-article">
-          <div class="content-type content-type-two-columns">
-            <div class="subheadline">user-centred</div>
-            <h2>Concept & Wireframes</h2>
-            <div class="content-wrapper">
-              <div class="img-wrapper image"
-                style="background-image: url(../images/case/bring/mobile-mockup-concept.png);">
-                <img src="../images/case/bring/mobile-mockup-concept.png" alt="Bring mockup" />
-              </div>
-              <div class="text-wrapper">
-                <p>
-                  Home-delivery is becoming more common and the requirements for suppliers are becoming higher. Once an
-                  order has been placed, most people want it to be quick and easy to get their order, at a reasonable
-                  price.</p>
-                <p>
-                  The Bring Group had an idea of creating a service for home delivery of lighter packages. The client
-                  (the
-                  package receiver) would be able to follow the delivery's entire journey - from the online store to the
-                  door -
-                  in real-time on his/her smartphone. It was important for Bring that the progressive web app was
-                  user-centred
-                  and offered a high-level user experience.</p>
+	<header>
+		<nav>
+			<ul class="logotype">
+				<li>
+					<a href="../index.html">
+						<img src="../images/emmeliestrand-hori-logotype.svg"
+							alt="logotype of an illustration of a pencil and emmelie strand written" />
+					</a>
+				</li>
+			</ul>
+			<label for="menu" id="burger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</label>
+			<input id="menu" type="checkbox">
+			<ul class="menu">
+				<li><a href="../index.html">Start</a></li>
+				<li><a href="../portfolio.html" class="current-page">Portfolio</a></li>
+				<li><a href="../about.html">About me</a></li>
+				<li><a href="../contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="o-portfolio-hero">
+			<div class="section-inner no-top-padding no-bottom-padding">
+				<div class="hero-wrapper">
+					<div class="subheadline">
+						Home delivery web application
+					</div>
+					<h1>Bring</h1>
+					<ul class="case-summary">
+						<li>
+							<p>
+								<strong>Project description</strong>
+								Introducing a new digital service, Home Delivery by Bring, designed to meet the high
+								requirements of users seeking fast package delivery, easy modification options, and live
+								tracking—all accessible through a hassle-free, easy-to-use web application without the
+								need for installation. Conceptualized, designed, and coded as a proof of concept (POC),
+								this innovative solution aims to revolutionize home delivery services.
+							</p>
+						</li>
+						<li>
+							<p>
+								<strong>My role</strong>
+								UX Designer, Front-end developer
+							</p>
+						</li>
+						<li>
+							<p>
+								<strong>The team</strong>
+								UI Designer, Project Manager
+							</p>
+						</li>
+						<li>
+							<p>
+								<strong>Tools & Devices</strong>
+								Figma, HTML5, SCSS, Vanilla JS
+							</p>
+						</li>
+						<li>
+							<p>
+								<strong>Timeline</strong>
+								August 2020 - September 2020
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="text-content">
+			<div class="section-inner no-top-padding no-bottom-padding">
+				<article class="o-article">
+					<div class="content-type content-type-two-columns">
+						<div class="subheadline">Area: UX Research</div>
+						<h2>Customer journey & Concept</h2>
+						<div class="content-wrapper">
+							<div class="text-wrapper">
+								<p>
+									Home-delivery is becoming more common and the requirements for suppliers are
+									becoming higher. Once an order has been placed, most customers want it to be quick
+									and easy to get their order,
+									at a reasonable price.</p>
+								<p>
+									The Bring Group had an idea of creating a service for home delivery of lighter
+									packages. The customer (the package receiver) would be able to follow the delivery's
+									entire journey - from the
+									online store to the door - in real-time on his/her smartphone. It was important for
+									Bring that the progressive
+									web app was user-centred and offered a high-level user experience.</p>
+								<ul class="m-tags">
+									<li class="tag">UX Research</li>
+									<li class="tag">Customer journey</li>
+									<li class="tag">Touchpoints</li>
+								</ul>
+							</div>
+							<div class="img-wrapper image contain"
+								style="background-image: url(../images/case/bring/bring-customer-journey.png);">
+								<img src="../images/case/bring/bring-customer-journey.png"
+									alt="Mind-map Customer journey for package delivery" />
+							</div>
 
-              </div>
-            </div>
-          </div>
-          <div class="content-type content-type-one-column">
-            <div class="subheadline">Simple & Playful</div>
-            <h2>Mockups & Design</h2>
-            <div class="content-wrapper">
-              <div class="img-wrapper image"
-                style="background-image: url(../images/case/bring/mobile-mockup-design.png);">
-                <img src="../images/case/bring/mobile-mockup-design.png" alt="Bring mockup" />
-              </div>
-              <div class="text-wrapper">
-                <p>Emmelie and a small team developed the concept, new design, a coded prototype and new
-                  tonality in the
-                  communication between Bring and the consumer.
-                </p>
-                <p>Bring's new home delivery meets the high demands that are set. It's easy to adjust the date and time
-                  when life changes, add extra services and information. When the delivery is on its way, it is easy to
-                  follow packages in real-time and be ready to receive packages. As simple as possible with a playful
-                  design.</p>
-              </div>
-            </div>
-          </div>
-          <div class="content-type content-type-hastags">
-            <div class="content-wrapper">
-              <h3>TOOLS/TECHNIQUE/METHODS</h3>
-              <ul class="hastags-wrapper">
-                <li>HiFi-Wireframes</li>
-                <li>Figma (design tool)</li>
-                <li>Atomic Design (method)</li>
-                <li>Design system and Components</li>
-                <li>CSS/SASS</li>
-                <li>HTML</li>
-                <li>User-centered design</li>
-                <li>Vanilla JS</li>
-                <li>Coded Prototype (HTML/CSS/JS)</li>
-                <li>UX Research</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div>
-      <div class="logotype">
-        <img src="../images/emmeliestrand-hori-logotype-white.svg" alt="white logotype">
-      </div>
-      <div>
-        Stockholm, Sweden
-      </div>
-      <div>
-        <a href="mailto:hello@emmeliestrand.se" target="_blank">hello@emmeliestrand.se →</a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/emmeliestrand/" target="_blank">Linkedin →</a>
-      </div>
-    </div>
-  </footer>
+						</div>
+					</div>
+					<div class="content-type content-type-two-columns">
+						<div class="subheadline">Area: UX/UI Design and Prototype</div>
+						<h2>UX Wireframes & UI Mockups</h2>
+						<div class="content-wrapper">
+							<div class="text-wrapper">
+								<p>
+									Emmelie and a small team developed the concept, UI and Interactive design, a coded
+									prototype and new tonality in the communication between Bring and the consumer.
+								</p>
+								<p>
+									Bring's new home delivery meets the high demands that are set. It's easy to adjust
+									the date and time when life changes, add extra services and information. When the
+									delivery is on its way, it is easy to follow packages in real-time and be ready to
+									receive packages. As simple as possible with a playful design.
+								</p>
+								<p>
+									As part of the coded proof of concept (POC), we developed a comprehensive Design
+									System built in HTML, SCSS, and Vanilla JS. This Design System was meticulously
+									structured according to the Atomic Design methodology, ensuring scalability and ease
+									of use.
+								</p>
+								<p>
+									Designed with future scalability in mind, the system can be easily converted into
+									React components for seamless integration into the project. By adhering to the
+									Atomic Design methodology, we ensured consistency, efficiency, and maintainability
+									throughout the development process.
+								</p>
+								<ul class="m-tags">
+									<li class="tag">UX Design</li>
+									<li class="tag">UI Design</li>
+									<li class="tag">Lo-Fi Wireframes</li>
+									<li class="tag">Hi-Fi Wireframes</li>
+									<li class="tag">HTML5</li>
+									<li class="tag">CSS/SCSS</li>
+									<li class="tag">Vanilla JS</li>
+									<li class="tag">Design system</li>
+									<li class="tag">Atomic Design</li>
+								</ul>
+							</div>
+							<div class="img-wrapper image contain transparent"
+								style="background-image: url(../images/case/bring/UX-UI-mockup.png);">
+								<img src="../images/case/bring/UX-UI-mockup.png"
+									alt="UI and UX design on a mobile applications" />
+							</div>
+							<div class="img-wrapper image contain transparent"
+								style="background-image: url(../images/case/bring/bring-ux-wireframes.png);">
+								<img src="../images/case/bring/bring-ux-wireframes.png" alt="UX wireframes" />
+							</div>
+							<div class="img-wrapper image contain transparent"
+								style="background-image: url(../images/case/bring/bring-ui-mockups.png);">
+								<img src="../images/case/bring/bring-ui-mockups.png" alt="UI wireframes" />
+							</div>
+						</div>
+					</div>
+					<div class="content-type content-type-one-column">
+						<div class="subheadline">Area: Feedback</div>
+						<h2>Quote from team</h2>
+						<div class="content-wrapper">
+							<div class="text-wrapper">
+								<p class="ingress">
+									Emmelie is one of the sharpest multi-talents I've had the privilege to work with on
+									several projects. In addition to having deep knowledge in UI, UX, and Frontend, she
+									is a highly valued team member, who always delivers on time and with quality. I
+									highly recommend her if you are looking for that unique extra something that takes a
+									digital product from Good to Wow. </p>
+								<p><small>– <strong>Anna Stam</strong>, Senior UX Designer & Digital AD</small></p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div>
+			<div class="logotype">
+				<img src="../images/emmeliestrand-hori-logotype-white.svg" alt="white logotype">
+			</div>
+			<div>
+				Stockholm, Sweden
+			</div>
+			<div>
+				<a href="mailto:hello@emmeliestrand.se" target="_blank">hello@emmeliestrand.se →</a>
+			</div>
+			<div>
+				<a href="https://www.linkedin.com/in/emmeliestrand/" target="_blank">Linkedin →</a>
+			</div>
+		</div>
+	</footer>
 </body>

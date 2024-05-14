@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact and Connect | Emmelie Strand</title>
     <meta name="description"
         content="Please contact or connect with me through email or on linkedin if you have any questions or need a mentor.">
-
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -16,39 +13,32 @@
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#82d7d0">
     <meta name="msapplication-TileColor" content="#82d7d0">
     <meta name="theme-color" content="#82d7d0">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <!-- SCSS and Atomic Design system -->
-    <link href="public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="./public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
     <header>
-        <div class="inner">
-            <div class="m-top-navigation">
-                <ul>
-                    <li class="logotype">
-                        <a href="index.html">
-                            <img src="./images/emmeliestrand-hori-logotype.svg" alt="logotype" />
-                        </a>
-                    </li>
-                    <li class="menu-wrapper">
-                        <nav>
-                            <a href="./about.html">About me</a>
-                            <a class="active" href="./contact.html">Contact</a>
-                        </nav>
-                    </li>
-                    <li class="menu-wrapper-mobil">
-                        <nav>
-                            <a href="./about.html">About me</a>
-                            <a class="active" href="./contact.html">Contact</a>
-                        </nav>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <nav>
+            <ul class="logotype">
+                <li>
+                    <a href="index.html">
+                        <img src="./images/emmeliestrand-hori-logotype.svg"
+                            alt="logotype of an illustration of a pencil and emmelie strand written" />
+                    </a>
+                </li>
+            </ul>
+            <label for="menu" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input id="menu" type="checkbox">
+            <ul class="menu">
+                <li><a href="./index.html">Start</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./about.html">About me</a></li>
+                <li><a href="./contact.html" class="current-page">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="o-hero">
@@ -59,15 +49,16 @@
                             <div class="subheadline">
                                 It starts with hello
                             </div>
-                            <h1>Contact & Connect</h1>
+                            <h1>Say hello & Connect</h1>
                             <div class="padded-wrapper">
                                 <div class="inner">
                                     <div>
                                         <p class="ingress">
-                                            Do you have any questions? Maybe you want advice on a design issue? Support
-                                            in moving forward in your tech career? Do you need a mentor? I'm not an
-                                            expert, but I'm glad if I can help you. Do not hesitate to contact me - via
-                                            email or on Linkedin.</p>
+                                            Do you have any questions? Need advice on a design issue or support in
+                                            advancing your tech career? Looking for a mentor? While I may not be an
+                                            expert, I'm always happy to offer assistance wherever I can. Don't hesitate
+                                            to reach out to me via email or on LinkedIn. I look forward to hearing from
+                                            you!</p>
                                     </div>
                                     <div class="buttons-wrapper">
                                         <div class="button primary-button">
@@ -82,7 +73,7 @@
                         </div>
                     </li>
                     <li class="img-side">
-                        <div class="inner" style="background-image: url(./images/gro/_G5A8383_web.jpg);">
+                        <div class="image-wrapper inner" style="background-image: url(./images/gro/_G5A8383_web.jpg);">
                             <img src="./images/gro/_G5A8383_web.jpg"
                                 alt="Smiling Emmelie in brown hair and white blouse" />
                         </div>
@@ -97,14 +88,15 @@
                     <div>
                         <h3 class="subheadline">Information</h3>
                         <p>name: <strong>Emmelie Strand</strong></p>
-                        <p>location: <strong>Stockholm, Sweden</strong></p>
-                        <p>do: <strong>Design and Front-end code</strong></p>
-                        <p>loves: <strong>Cats, animals and home decor</strong></p>
-
+                        <p>location: <strong>Stockholm, Sweden & Marbella, Spain</strong></p>
+                        <p>do: <strong>Senior Designer and Front-end consultant at <a href="https://www.zunnypeople.com"
+                                    target="_blank" rel="noopener">Zunny People →</a></strong></p>
+                        <p>loves: <strong>Design systems, delicious food, and sunny views</strong></p>
                     </div>
                     <div>
                         <h3 class="subheadline">Contact & Social media</h3>
-                        <p><strong>hello@emmeliestrand.se</strong> for email</p>
+                        <p><a href="mailto:hello@emmeliestrand.se" target="_blank" rel="noopener">hello@emmeliestrand.se
+                                →</a> for email</p>
                         <p><a href="https://www.linkedin.com/in/emmeliestrand/" target="_blank" rel="noopener">linkedin
                                 →</a> for digital connection</p>
                         <p><a href="https://www.instagram.com/emmeliestrand.se/" target="_blank"
@@ -115,15 +107,14 @@
                 </div>
             </div>
         </section>
-
     </main>
     <footer>
         <div>
             <div class="logotype">
-                <img src="./images/emmeliestrand-hori-logotype-white.svg" alt="white logotype">
+                <img src="./images/emmeliestrand-hori-logotype-white.svg" alt="emmelie strand logotype">
             </div>
             <div>
-                Stockholm, Sweden
+                Stockholm, Sweden & Marbella, Spain
             </div>
             <div>
                 <a href="mailto:hello@emmeliestrand.se" target="_blank" rel="noopener">hello@emmeliestrand.se →</a>

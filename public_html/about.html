@@ -7,8 +7,6 @@
     <title>Little more personal about me and skill set | Emmelie Strand</title>
     <meta name="description"
         content="I am described as a driven and ambitious person with a humble personality and a positive attitude. Skill set in Design and Front-end develop">
-
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -16,39 +14,33 @@
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#82d7d0">
     <meta name="msapplication-TileColor" content="#82d7d0">
     <meta name="theme-color" content="#82d7d0">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <!-- SCSS and Atomic Design system -->
     <link href="public/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header>
-        <div class="inner">
-            <div class="m-top-navigation">
-                <ul>
-                    <li class="logotype">
-                        <a href="index.html">
-                            <img src="./images/emmeliestrand-hori-logotype.svg" alt="logotype" />
-                        </a>
-                    </li>
-                    <li class="menu-wrapper">
-                        <nav>
-                            <a class="active" href="./about.html">About me</a>
-                            <a href="./contact.html">Contact</a>
-                        </nav>
-                    </li>
-                    <li class="menu-wrapper-mobil">
-                        <nav>
-                            <a class="active" href="./about.html">About me</a>
-                            <a href="./contact.html">Contact</a>
-                        </nav>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <nav>
+            <ul class="logotype">
+                <li>
+                    <a href="index.html">
+                        <img src="./images/emmeliestrand-hori-logotype.svg"
+                            alt="logotype of an illustration of a pencil and emmelie strand written" />
+                    </a>
+                </li>
+            </ul>
+            <label for="menu" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input id="menu" type="checkbox">
+            <ul class="menu">
+                <li><a href="./index.html">Start</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./about.html" class="current-page">About me</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="o-hero">
@@ -64,9 +56,12 @@
                                 <div class="inner">
                                     <div>
                                         <p class="ingress">
-                                            I am described as a driven and ambitious person with a humble personality
-                                            and a positive attitude. I've always liked logical problem solving and also
-                                            more abstract thinking - in form of painting and illustration.
+                                            I am often described as a driven and ambitious individual, known for my
+                                            humble personality and positive attitude. I have a passion for logical
+                                            problem-solving as well as more abstract forms of creativity, such as
+                                            painting and illustration. My diverse interests and skills allow me to
+                                            approach challenges from multiple perspectives, enabling me to find
+                                            innovative solutions and create engaging experiences.
                                         </p>
                                     </div>
                                     <div class="buttons-wrapper">
@@ -82,221 +77,89 @@
                         </div>
                     </li>
                     <li class="img-side">
-                        <div class="inner" style="background-image: url(./images/gro/_G5A8692_web.jpg);">
+                        <div class="image-wrapper inner top"
+                            style="background-image: url(./images/gro/_G5A8692_web.jpg);">
                             <img src="./images/gro/_G5A8692_web.jpg" alt="Portrait of Emmelie Strand" />
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="skills">
+        <section>
             <div class="section-inner">
-                <h2 class="padding-left">Skill set</h2>
+                <h2>Skill set</h2>
                 <div class="m-two-column">
                     <div>
-                        <h3 class="subheadline">UI, UX & Graphic design</h3>
-                        <ul class="m-skill-bar-wrapper">
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-90"></span>
-                                </div>
-                                <div class="skill-title">Accessibility WCAG</div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-95"></span>
-                                </div>
-                                <div class="skill-title">Design systems</div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-95"></span>
-                                </div>
-                                <div class="skill-title">Mobil first/Responsive</div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-95"></span>
-                                </div>
-                                <div class="skill-title">UI Mockups</div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-80"></span>
-                                </div>
-                                <div class="skill-title">Information arcitecture
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-80"></span>
-                                </div>
-                                <div class="skill-title">Interaction design
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-90"></span>
-                                </div>
-                                <div class="skill-title">Holding UX workshops
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-80"></span>
-                                </div>
-                                <div class="skill-title">User-flows
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-90"></span>
-                                </div>
-                                <div class="skill-title">Wireframing
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-95"></span>
-                                </div>
-                                <div class="skill-title">Digital graphic profiles
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-80"></span>
-                                </div>
-                                <div class="skill-title">Print layout
-                                </div>
-                            </li>
+                        <h3 class="subheadline">Design and UX tools</h3>
+                        <ul class="m-tags">
+                            <li class="tag">Figma</li>
+                            <li class="tag">FigJam</li>
+                            <li class="tag">Miro</li>
+                            <li class="tag">Adobe XD</li>
+                            <li class="tag">Photoshop</li>
+                            <li class="tag">Illustrator</li>
+                            <li class="tag">InDesign (print)</li>
+                            <li class="tag">Balsamiq</li>
+                            <li class="tag">Sketch</li>
+                            <li class="tag">Invision</li>
+                            <li class="tag">Zeplin</li>
+                        </ul>
+                        <h3 class="subheadline">Agile and Documentation tools</h3>
+                        <ul class="m-tags">
+                            <li class="tag">Jira</li>
+                            <li class="tag">Scrum</li>
+                            <li class="tag">Kanban</li>
+                            <li class="tag">SAFe</li>
+                            <li class="tag">Confluence</li>
+                            <li class="tag">Slack</li>
+                            <li class="tag">Zoom</li>
+                            <li class="tag">Teams</li>
+                            <li class="tag">Trello</li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="subheadline">Develop and Systems</h3>
-                        <ul class="m-skill-bar-wrapper">
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-95"></span>
-                                </div>
-                                <div class="skill-title">HTML5</div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-95"></span>
-                                </div>
-                                <div class="skill-title">CSS/SASS
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-90"></span>
-                                </div>
-                                <div class="skill-title">Vanilla JS</div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-80"></span>
-                                </div>
-                                <div class="skill-title">Svelte</div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-95"></span>
-                                </div>
-                                <div class="skill-title">Atomic design system
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-95"></span>
-                                </div>
-                                <div class="skill-title">Front-end components
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-50"></span>
-                                </div>
-                                <div class="skill-title">Vue.js
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-30"></span>
-                                </div>
-                                <div class="skill-title">PHP
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-90"></span>
-                                </div>
-                                <div class="skill-title">Wordpress themes
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-70"></span>
-                                </div>
-                                <div class="skill-title">Frontend for Episerver
-                                </div>
-                            </li>
-                            <li>
-                                <div class="a-skill-bar">
-                                    <span class="bar bar-50"></span>
-                                </div>
-                                <div class="skill-title">Hubspot developer
-                                </div>
-                            </li>
+                        <h3 class="subheadline">Design and tech skills</h3>
+                        <ul class="m-tags">
+                            <li class="tag">Clean code</li>
+                            <li class="tag">CMS: Drupal</li>
+                            <li class="tag">CMS: Hubspot</li>
+                            <li class="tag">CMS: Litium</li>
+                            <li class="tag">CMS: Optimizely/Episerver</li>
+                            <li class="tag">CMS: Shopify</li>
+                            <li class="tag">CMS: Sitevision</li>
+                            <li class="tag">CMS: Wordpress</li>
+                            <li class="tag">Cross-browser Development</li>
+                            <li class="tag">CSS3</li>
+                            <li class="tag">CSS libary: Bootstrape</li>
+                            <li class="tag">CSS libary: Tailwind CSS</li>
+                            <li class="tag">Digital accessability</li>
+                            <li class="tag">Desktop-first</li>
+                            <li class="tag">Design system in Figma</li>
+                            <li class="tag">Design system in Storybook</li>
+                            <li class="tag">Front-end development</li>
+                            <li class="tag">HiFi Wireframes</li>
+                            <li class="tag">HTML5 and semantics</li>
+                            <li class="tag">Interactive design</li>
+                            <li class="tag">JS Framwork: Svelte</li>
+                            <li class="tag">JS Library: React</li>
+                            <li class="tag">JS Library: Vue.js</li>
+                            <li class="tag">Javascript: Vanilla JS</li>
+                            <li class="tag">LoFi Wireframes</li>
+                            <li class="tag">Mobile-first</li>
+                            <li class="tag">Mockups</li>
+                            <li class="tag">Pixel perfect design</li>
+                            <li class="tag">POC in HTML/CSS/JS</li>
+                            <li class="tag">Product design</li>
+                            <li class="tag">Prototypes in Figma</li>
+                            <li class="tag">Responsive design</li>
+                            <li class="tag">Service design</li>
+                            <li class="tag">UI Design</li>
+                            <li class="tag">UX Design</li>
+                            <li class="tag">Visual design</li>
+                            <li class="tag">WCAG</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="o-teaser-content">
-            <div class="section-inner">
-                <ul>
-                    <li class="left-side">
-                        <div class="inner">
-                            <div class="subheadline">
-                                I've worked in various
-                            </div>
-                            <h2>Industries</h2>
-                            <div class="padded-wrapper">
-                                <div class="inner">
-                                    <div>
-                                        <p class="ingress">
-                                            Public sector, Real estate, Automotive, Retail Industry, Pharmaceutical,
-                                            Banking & Finance, Education, Tourism, Restaurant, Logistics and SaaS
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="middle-side">
-                        <div class="image-wrapper with-color"
-                            style="background-image: url(./images/gro/_G5A8486_web.jpg)">
-                            <img src="./images/gro/_G5A8486_web.jpg"
-                                alt="Systems and project image, a growing green plant" />
-                        </div>
-                    </li>
-                    <li class="right-side">
-                        <div class="inner padded-wrapper">
-                            <div class="text-wrapper">
-                                <h3 class="subheadline padding-bottom">Systems and projects</h3>
-                                <p>
-                                    Multiple of external webs in Wordpress and Episerver, sign-and-drive configurator
-                                    web app built in Mustache.js, racing cup site, real estate and “my page”-admin,
-                                    digital educational platforms, intranets, healthcare professionals portals,
-                                    financial ratios & stock analysis web tool, home deliver web app, digital museum
-                                    experience and e-commerces.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </section>
         <section class="o-teaser-content">
@@ -312,9 +175,10 @@
                                 <div class="inner">
                                     <div>
                                         <p class="ingress">
-                                            I love to share my story into tech, maybe because it wasn't a straight line.
-                                            I've found out that sharing my story opens up and makes people tell their
-                                            stories. It's a lovely way to meet and get to know new people.
+                                            I am passionate about sharing my journey into the tech industry, perhaps
+                                            because it wasn't a straightforward path. I've discovered that by sharing my
+                                            story, it encourages others to open up and share their own experiences. It's
+                                            a wonderful way to connect with and get to know new people.
                                         </p>
                                     </div>
                                     <div class="cta-link-wrapper">
@@ -329,7 +193,7 @@
                         <div class="image-wrapper with-color"
                             style="background-image: url(./images/gro/_G5A8656_web.jpg)">
                             <img src="./images/gro/_G5A8656_web.jpg"
-                                alt="Systems and project image, a growing green plant" />
+                                alt="Emmelie is speaking in public" />
                         </div>
                     </li>
                     <li class="right-side">
@@ -337,10 +201,11 @@
                             <div class="text-wrapper">
                                 <h3 class="subheadline padding-bottom">Would you like to invite me?</h3>
                                 <p>
-                                    I have held several speeches at schools and events - both IRL and digital - about
-                                    Hello Girl! and my way into tech. Would you like to invite me to speak at your
-                                    school, event or workplace? Let me know, and together we'll find a theme and purpose
-                                    that suits your needs. </p>
+                                    I have had the privilege of delivering numerous speeches at schools and events, both
+                                    in person and digitally, discussing Hello Girl! and my journey into the tech
+                                    industry. If you would like to invite me to speak at your school, event, or
+                                    workplace, please don't hesitate to reach out. Together, we can explore themes and
+                                    topics that align with your specific needs and interests.</p>
                             </div>
                         </div>
                     </li>
